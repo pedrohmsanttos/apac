@@ -1,0 +1,23 @@
+UPDATE j27a9_relacionado_anexo
+SET id = 55041
+WHERE id_relacionado = 121 AND id = 55036;
+
+UPDATE j27a9_relacionado_anexo
+SET id = 55042
+WHERE id_relacionado = 121 AND id = 55037;
+
+UPDATE j27a9_relacionado_anexo
+SET id = 55043
+WHERE id_relacionado = 121 AND id = 55038;
+
+UPDATE j27a9_relacionado_anexo
+SET id = 55044
+WHERE id_relacionado = 121 AND id = 55040;
+
+UPDATE j27a9_relacionado_anexo
+SET id = 55045
+WHERE id_relacionado = 121 AND id = 55026;
+
+UPDATE j27a9_relacionado_anexo
+SET id = 55046
+WHERE id_relacionado = 121 AND id = 55028;

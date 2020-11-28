@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset addfieldpath="/administrator/components/com_content/models/fields">
+		<field
+				name="id"
+				type="hidden"
+				/>
+
+		<field
+				name="titulo"
+				type="text"
+				required="true"
+				label="Título"
+				description=""
+				maxlength="150"
+				size="40"
+				class="inputbox"
+				default=""
+				/>
+
+
+		<field
+				name="data"
+				required="true"
+				type="calendar"
+				label="Data"
+				size="22"
+				translateformat="true"
+				showtime="true"
+				filter="user_utc"
+				/>
+		<field
+				name="catid"
+				type="category"
+				extension="com_agenda"
+				class="inputbox"
+				default=""
+				label="Categoria"
+				description=""
+				required="true"
+				/>
+
+		<field 
+		       name="descricao"
+			   required="true"
+			   type="textarea" 
+			   maxlength="500"
+			   label="Descrição" 
+			   description="" 
+			   rows="10" 
+			   cols="5" 
+			   filter="raw"
+			   />
+
+		<field 
+		       name="local"
+			   required="true"
+		       type="textarea"
+			   label="Local" 
+			   maxlength="200"
+			   description="" 
+			   rows="10" 
+			   cols="5" 
+			   filter="raw"
+			   />
+
+	
+	</fieldset>
+</form>

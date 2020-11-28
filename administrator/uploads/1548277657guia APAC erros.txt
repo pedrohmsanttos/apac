@@ -1,0 +1,11 @@
+Erro 02: PERSITE. O campo Nome da varivel é obrigatório; (Feito)
+Erro 05: PERSISTE. Não existe campo ordem no cadastro da previsão; (Feito)
+Erro 09: PERSISTE. Os campos nome e ícone são obrigatórios; (Feito)
+Erro 14: PERSISTE. O campo data que fica no cadastro da previsão ainda está no formata AAAA-MM-DD (Erro 14.1);
+Erro 17: PERSISTE. As abas mesorregião e variáveis não vem preenchidas; ( ??? )
+Erro 18: É possível cadastrar uma mesorregião vazia. Os campos Nome e Geojson são obrigatórios; (Feito)
+Erro 19: Ao cadastrar uma previsão do tempo, o campo data não está sendo salvo corretamente, ou seja, não salva a data que a previsão foi cadastrada;
+Erro 20: Em mesorregião, ao salvar uma mesorregião os dados são mantidos na tela. O mesmo ocorre em variável; (Não é um error)
+Erro 21: Em mesorregião, não existe campo ordem. A ordenação vai ser feita fora do cadastro. Ficou acordado com o desenvolvedor que a ordenação do tipo arrasta e solta (como já acontece em outras áreas do site); (Feito)
+Erro 22: Não é possível editar uma variável; (Feito)
+Erro 23: Em previsão do tempo>>previsões>>variáveis, é possivel cadastrar uma variável sem valor. E o campo variável sempre vem carregado por default com a ultima variável cadastrada (em previsão do tempo>>variáveis); (Feito)

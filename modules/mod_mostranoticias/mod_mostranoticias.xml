@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Exibição de Notícias</name>
+    <author>Inhalt Soluções Em Informática</author>
+    <version>1.0.0</version>
+    <description>Módulo para exibição da listagem de artigos categorizado de forma tabular.</description>
+    <files>
+        <filename>mod_mostranoticias.xml</filename>
+        <filename module="mod_mostranoticias">mod_mostranoticias.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+    <fields name="params">
+        <fieldset name="basic">
+          <field
+            name="titulo"
+            type="text"
+            label="Título:"
+            description=""
+            maxlength="50"
+            size="300"
+            filter="safehtml" />
+
+          <field
+            name="catid"
+            type="category"
+            label="JCATEGORY"
+            description="MOD_LATEST_NEWS_FIELD_CATEGORY_DESC"
+            extension="com_content"
+            multiple="true"
+            size="10"
+            default=""
+            >
+          </field>
+
+          <field name="ordenacao"
+                class="btn-group btn-group-yesno"
+                type="radio"
+                default="0"
+                label="Tipo de ordenação:"
+                description="Joomla ordem ou Data de criação">
+                <option value="joomla">Joomla</option>
+                <option value="data">Data de criação</option>
+          </field>
+          
+          <field name="tipo" type="list" default="noticias" required="true" label="Tipo:" description="">
+            <option value="">Selecione</option>
+            <option value="avisos">Avisos</option>
+            <option value="informes">Informes</option>
+            <option value="noticias">Notícias</option>
+            <option value="licitacoes">Licitações</option>
+          </field>
+          <field
+            name="contagem"
+            type="number"
+            default="4"
+            label="Contagem:"
+            description=""
+            min="0"
+            max="10"
+            step="1" />
+
+        </fieldset>
+    </fields>
+</config>
+</extension>

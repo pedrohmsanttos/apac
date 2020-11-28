@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+				name="id"
+				type="hidden"
+				/>
+		<field
+				name="titulo"
+				type="textarea"
+				label="Título de Sidebar:"
+				description=""
+				maxlength="300"
+				size="300"
+				class="inputbox txt-area-rel"
+				default=""
+				/>
+		
+		<field
+				name="ordering"
+				type="number"
+				default="0"
+				label="Ordem:"
+				description=""
+				min="1"
+				step="1"
+				/>
+
+		<field
+			name="artigos"
+			type="sql"
+			class="inputbox span12 small artigos"
+			multiple="true"
+			label="Página/Artigo que será publicado:"
+			query="SELECT id,title,created FROM #__content order by created desc"
+			key_field="id"
+			value_field="title"
+			>
+		</field>
+
+		
+	</fieldset>
+</form>

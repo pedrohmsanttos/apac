@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Prefeituras">
+		<message>Orgãos</message>
+	</layout>
+	<fields name="request"
+			addfieldpath="/administrator/components/com_prefeitura/models/fields">
+		<fieldset name="request">
+			<field
+					name="id"
+					type="prefeitura"
+					label="Prefeitura"
+					description="Prefeitura"
+					/>		</fieldset>
+	</fields>
+</metadata>

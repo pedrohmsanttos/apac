@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Exibição da Lista de Avisos</name>
+    <author>Inhalt Soluções Em Informática</author>
+    <version>1.0.0</version>
+    <description>Módulo para exibição de lista de avisos.</description>
+    <files>
+        <filename>mod_todosavisos.xml</filename>
+        <filename module="mod_todosavisos">mod_todosavisos.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>tmpl/default.php</filename>
+    </files>
+    <config>
+      <fields name="params">
+          <fieldset name="basic">
+              <field name="categoria"
+                     type="category"
+                     extension="com_aviso"
+                     label="Categoria:"
+                     description="" />
+               <field name="mostratodos"
+                 class="btn-group btn-group-yesno"
+                 type="radio"
+                 default="0"
+                 label="Mostrar de todas as categorias?"
+                 description="Mostrar de todas as categorias?">
+                 <option value="0">Não</option>
+                 <option value="1">Sim</option>
+               </field>
+          </fieldset>
+      </fields>
+    </config>
+</extension>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_cadastrointeressado</name>
+    <creationDate>2019-05-23</creationDate>
+    <copyright>2019 Lerisson Freitas</copyright>
+    <license>GNU General Public License versão 2 ou posterior; consulte o arquivo License. txt</license>
+    <author>Lerisson Freitas</author>
+    <authorEmail>lerisson.freitas@inhalt.com.br</authorEmail>
+    <authorUrl></authorUrl>
+    <version>CVS: 1.0.0</version>
+    <description>Tela que permitirá ao usuário, através de um link no portal da APAC, cadastrar-se e escolher os Boletins de Publicação (Produtos da APAC) de acordo com o seu interesse. </description>
+    
+    
+    
+   <install> <!-- Runs on install -->
+        <sql>
+            <file driver="postgresql" charset="utf8">sql/install.postgresql.utf8.sql</file>
+        </sql>
+    </install>
+    <update> <!-- Runs on update -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/update.mysql.utf8.sql</file>
+        </sql>
+    </update>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="postgresql" charset="utf8">sql/uninstall.postgresql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>cadastrointeressado.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+    </files>
+    <media destination="com_cadastrointeressado" folder="media">
+        <folder>js</folder>
+        <folder>css</folder>
+    </media>
+    <languages folder="site/languages">
+        
+			<language tag="en-GB">en-GB/en-GB.com_cadastrointeressado.ini</language>
+    </languages>
+    <administration>
+        <menu>COM_CADASTROINTERESSADO</menu>
+        <submenu>
+            
+			<menu link="option=com_cadastrointeressado&amp;view=interessados" view="interessados" alt="Cadastrointeressado/Interessados">COM_CADASTROINTERESSADO_TITLE_INTERESSADOS</menu>
+
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>cadastrointeressado.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="administrator/languages">
+            
+			<language tag="en-GB">en-GB/en-GB.com_cadastrointeressado.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_cadastrointeressado.sys.ini</language>
+        </languages>
+    </administration>
+    <config>
+        <fields name="params">
+            <fieldset name="component">
+                <field name="save_history" default="0" />
+            </fieldset>
+        </fields>
+    </config>
+    <plugins>
+        <plugin group="search" plugin="cadastrointeressado"/>
+    </plugins>
+    
+</extension>
+<!-- Component built by the Joomla Component Creator -->
+<!-- http://www.component-creator.com/ -->

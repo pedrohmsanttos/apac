@@ -1,0 +1,136 @@
+.icon-48-previsoes {
+      background-image: url(../images/l_previsoes.png);
+      padding-left:60px!important;
+}
+
+.icon-48-previsao {
+      background-image: url(../images/l_previsoes.png);
+      padding-left:60px!important;
+}
+
+.color-box-previsoes { 
+      float: left;      
+      width: 15px;      
+      height: 15px;      
+      margin-right: 5px;      
+      border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.other-filters{
+      padding: 0 14px;
+}
+
+.messoregiao-linha{
+      background: #ccc;
+}
+
+.messoregiao-linha-celula{
+      padding: 8px;
+      border: 1px solid;
+}
+
+.messoregiao-linha-mcelula{
+      border: 1px solid;
+}
+
+/* important styles */
+
+.tablefix {
+      border-collapse: separate;
+      border-spacing: 0;
+      border-top: 1px solid grey;
+}
+
+.divfixa {
+      overflow: hidden;
+      margin-left: 5em;
+      padding: 0;
+}
+
+.headcol {
+      position: absolute;
+      width: 250px;
+}
+
+::placeholder { /* Firefox, Chrome, Opera */ 
+      color:#000 !important; 
+}
+
+#TMax{
+      width: 50%;
+      position: relative;
+      float: left;
+      background: #FF7F50;
+      color: black;
+}
+
+#TMin{
+      width: 50%;
+      position: relative;
+      float:right;
+      background:#87CEEB;
+      color: black;
+}
+
+#UMax{
+      width: 50%;
+      position: relative;
+      float: left;
+}
+
+#UMin{
+      width: 50%;
+      position: relative;
+      float:right;
+}
+
+select{
+      width: 100% !important;
+      margin-top: 10px !important;
+}
+
+#mesorregiao{
+      background:#10223e; 
+      color:#FFF; 
+      margin: 0 auto; 
+      text-align: center; 
+      margin-bottom: 10px;
+}
+
+#mesorregiao_conteudo{
+      background: #DCDCDC; 
+      color:#FFF;     
+      margin-top: 10px;
+}
+
+#jform_tipo{
+      width: 220px !important;
+}
+
+.dd-option-image, .dd-selected-image {
+      vertical-align: middle;
+      float: left;
+      margin-right: 5px;
+      max-width: 25px !important;
+}
+
+div .dd-select, .dd-container{
+      width: 100% !important;
+      background: #FFF !important;
+      height: 28px !important;
+      margin-top: 10px;
+}
+
+label .dd-selected-text{
+      line-height: none !important;
+}
+
+.dd-selected{
+      padding: 0 !important;
+      color: #555;
+      text-decoration: none;
+}
+
+.dd-selected:hover{
+      text-decoration: none;
+}

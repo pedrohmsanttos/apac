@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Exibição de Acontece</name>
+    <author>Inhalt Soluções Em Informática</author>
+    <version>1.0.0</version>
+    <description>Módulo para exibição de aceontece.</description>
+    <files>
+        <filename>mod_acontece.xml</filename>
+        <filename module="mod_acontece">mod_acontece.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>tmpl/default.php</filename>
+    </files>
+    <config>
+    <fields name="params">
+        <fieldset name="basic">
+
+            <field name="titulo_acontece"
+                   type="text"
+                   label="Título do modulo:"
+                   default="6"
+                   filter="raw"
+                   maxlength="80"/>
+
+            <field name="max_box"
+                   type="text"
+                   label="Número de blocos s/ imagem:"
+                   default="6"
+                   filter="raw"
+                   maxlength="3"/>
+
+            <field name="myspacer_4"
+                   type="spacer"
+                   hr="true" />
+
+
+            <field name="titulo_1"
+                   type="text"
+                   label="Título:"
+                   filter="raw"
+                   maxlength="80"/>
+
+            <field name="link_1"
+                   type="text"
+                   label="Link:"
+                   filter="string" />
+
+            <field name="media_1"
+                   type="media"
+                   label="Imagem:"
+                   directory="stories" />
+
+            <field name="categoria_1"
+                   type="category"
+                   extension="com_content"
+                   label="Categoria:"
+                   description="" />
+
+            <field name="myspacer_2"
+                   type="spacer"
+                   hr="true" />
+
+            <field name="titulo_2"
+                   type="text"
+                   label="Título:"
+                   filter="string"
+                   maxlength="80" />
+
+            <field name="link_2"
+                   type="text"
+                   label="Link:"
+                   filter="string" />
+
+            <field name="media_2"
+                   type="media"
+                   label="Imagem:"
+                   directory="stories" />
+
+            <field name="categoria_2"
+                   type="category"
+                   extension="com_content"
+                   label="Categoria:"
+                   description="" />
+
+            <field name="myspacer_3"
+                   type="spacer"
+                   hr="true" />
+
+            <field name="titulo_3"
+                   type="text"
+                   label="Título:"
+                   filter="raw"
+                   maxlength="80" />
+
+            <field name="link_3"
+                   type="text"
+                   label="Link:"
+                   filter="string" />
+
+            <field name="media_3"
+                   type="media"
+                   label="Imagem:"
+                   directory="stories" />
+
+            <field name="categoria_3"
+                   type="category"
+                   extension="com_content"
+                   label="Categoria:"
+                   description="" />
+
+            <field name="myspacer_4"
+                   type="spacer"
+                   hr="true" />
+
+            <field name="titulo_4"
+                   type="text"
+                   label="Título:"
+                   filter="raw"
+                   maxlength="80" />
+
+            <field name="link_4"
+                   type="text"
+                   label="Link:"
+                   filter="string" />
+
+            <field name="media_4"
+                   type="media"
+                   label="Imagem:"
+                   directory="stories" />
+
+            <field name="categoria_4"
+                   type="category"
+                   extension="com_content"
+                   label="Categoria:"
+                   description="" />
+
+            <field name="myspacer_4"
+                   type="spacer"
+                   hr="true" />
+
+            <field name="categoria_de_noticias"
+                   type="category"
+                   extension="com_content"
+                   label="Categoria das notícias:"
+                   description="Categoria das notícias dos blocos menores" />
+
+        </fieldset>
+    </fields>
+</config>
+</extension>

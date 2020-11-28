@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Avisohidrologicos">
+		<message>Avisohidrologico</message>
+	</layout>
+	<fields name="request"
+			addfieldpath="/administrator/components/com_avisohidrologico/models/fields">
+		<fieldset name="request">
+			<field
+					name="id"
+					type="avisohidrologico"
+					label="Avisohidrologico"
+					description="Avisohidrologico"
+					/>		
+		</fieldset>
+	</fields>
+</metadata>

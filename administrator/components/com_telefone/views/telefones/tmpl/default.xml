@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Telefones">
+		<message>Telefones</message>
+	</layout>
+	<fields name="request"
+			addfieldpath="/administrator/components/com_telefone/models/fields">
+		<fieldset name="request">
+			<field
+					name="id"
+					type="telefone"
+					label="Telefone"
+					description="Telefone"
+					/>		
+		</fieldset>
+	</fields>
+</metadata>

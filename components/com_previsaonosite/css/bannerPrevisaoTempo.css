@@ -1,0 +1,314 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+a{text-decoration:none;color:#000000}a:hover{text-decoration:underline;color:#000000} a:visited{text-decoration:none;color:#000000}
+
+/* tamanho 170 */
+#templates170{	
+	background: url(../_images/template_previsao.png) no-repeat center center;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+#templates170 .regiao{
+	width: 100%; 
+	text-align: center; 
+	top: 16%; 
+	position: absolute; 
+	font-family: calibri; 
+	font-size: 12px; 
+	font-weight: bold;
+}
+
+#templates170 .data{
+	width: 100%;
+    text-align: center;
+    top: 20%;
+    position: absolute;
+    font-family: calibri;
+    font-size: 10px;
+    font-weight: bold;
+    color: #666666;
+}
+
+#templates170 .legendaImagem{
+	width: 100%; 
+	text-align: center; 
+	top: 48px; 
+	position: absolute; 
+	font-family: calibri; 
+	font-size: 10px; 
+	font-weight: bold;
+}
+
+#templates170 .tempMax{
+	width: 100%;
+    text-align: left;
+    top: 30%;
+    left: 15%;
+    position: absolute;
+    font-family: tahoma;
+    font-size: 18px;
+    font-weight: bold;
+    color: #C00000;
+    width: 38px;
+}
+
+#templates170 .tempMin{
+	width: 100%;
+    text-align: left;
+    top: 40%;
+    left: 15%;
+    position: absolute;
+    font-family: tahoma;
+    font-size: 18px;
+    font-weight: bold;
+    color: #5E00FF;
+    width: 38px;
+}
+
+#templates170 .legenda{
+	width: 100%; 
+	text-align: center; 
+	top: 118px; 
+	position: absolute; 
+	font-family: tahoma; 
+	font-size: 10px; 
+	font-weight: bold; 
+	color: #000000;
+}
+
+#templates170 .descricao{
+	width: 97%; 
+	text-align: center; 
+	top: 128px; 
+	position: absolute; 
+	font-family: tahoma; 
+	font-size: 9px; 
+	color: #666666;
+	margin-left: 2px;
+}
+
+
+/* tamanho 150 */
+#templates150{
+	position: relative; 
+	width: 150px; 
+	height: 200px;
+	background: url(../_images/template_previsao.png) center right no-repeat;
+}
+
+#templates150 .regiao{
+    width: 100%;
+    text-align: center;
+    top: 31px;
+    position: absolute;
+    font-family: calibri;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#templates150 .data{
+	width: 100%;
+    text-align: center;
+    top: 40px;
+    position: absolute;
+    font-family: calibri;
+    font-size: 10px;
+    font-weight: bold;
+    color: #666666;
+}
+
+#templates150 .legendaImagem{
+	width: 100%; 
+	text-align: center; 
+	top: 48px; 
+	position: absolute; 
+	font-family: calibri; 
+	font-size: 10px; 
+	font-weight: bold;
+}
+
+#templates150 .tempMax{
+    text-align: left;
+    top: 95px;
+    left: 48px;
+    position: absolute;
+    font-family: tahoma;
+    font-size: 18px;
+    font-weight: bold;
+    color: #C00000;
+    width: 38px;
+}
+
+#templates150 .tempMin{
+    width: 100%;
+    text-align: left;
+    top: 95px;
+    left: 105px;
+    position: absolute;
+    font-family: tahoma;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0283C7;
+    width: 38px;
+}
+
+#templates150 .legenda{
+	width: 100%; 
+	text-align: center; 
+	top: 118px; 
+	position: absolute; 
+	font-family: tahoma; 
+	font-size: 10px; 
+	font-weight: bold; 
+	color: #000000;
+}
+
+#templates150 .descricao{
+	width: 97%; 
+	text-align: center; 
+	top: 128px; 
+	position: absolute; 
+	font-family: tahoma; 
+	font-size: 9px; 
+	color: #666666;
+	margin-left: 2px;
+}
+
+
+/* tamanho 130 */
+#templates130{
+	position: relative; 
+	background: url(../_images/template_previsao.png) center right no-repeat;
+}
+
+#templates130 .regiao{
+	width: 100%; 
+	text-align: center; 
+	top: 31px; 
+	position: absolute; 
+	font-family: calibri; 
+	font-size: 12px; 
+	font-weight: bold;
+}
+
+#templates130 .data{
+	width: 100%; 
+	text-align: center; 
+	top: 41px; 
+	position: absolute; 
+	font-family: calibri; 
+	font-size: 10px; 
+	font-weight: bold; 
+	color: #666666;
+}
+
+#templates130 .legendaImagem{
+	width: 100%; 
+	text-align: center; 
+	top: 51px; 
+	position: absolute; 
+	font-family: calibri; 
+	font-size: 10px; 
+	font-weight: bold;
+}
+
+#templates130 .tempMax{
+	width: 100%; 
+	text-align: left; 
+	top: 95px; 
+	left: 34px; 
+	position: absolute; 
+	font-family: tahoma; 
+	font-size: 16px; 
+	font-weight: bold; 
+	color: #C00000; 
+	width: 38px;
+}
+
+#templates130 .tempMin{
+	width: 100%; 
+	text-align: left; 
+	top: 95px; 
+	left: 93px; 
+	position: absolute; 
+	font-family: tahoma; 
+	font-size: 16px; 
+	font-weight: bold; 
+	color: #0283C7; 
+	width: 38px;
+}
+
+#templates130 .legenda{
+	width: 100%; 
+	text-align: center; 
+	top: 118px; 
+	position: absolute; 
+	font-family: tahoma; 
+	font-size: 10px; 
+	font-weight: bold; 
+	color: #000000;
+}
+
+#templates130 .descricao{
+	width: 97%; 
+	text-align: center; 
+	top: 128px; 
+	position: absolute; 
+	font-family: tahoma; 
+	font-size: 9px; 
+	color: #666666;
+	margin-left: 2px;
+}
+
+.amanha_tempMax{
+	width: 100%;
+    text-align: left;
+    top: 73%;
+    left: 55%;
+    position: absolute;
+    font-family: tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    color: #C00000;
+    width: 38px;
+}
+
+.amanha_tempMin{
+	width: 100%;
+    text-align: left;
+    top: 73%;
+    left: 35%;
+    position: absolute;
+    font-family: tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5E00FF;
+    width: 38px;
+}
+
+.amanha_legendaImagem{
+	width: 100%; 
+	text-align: center; 
+	top: 65%; 
+	left: 35%;
+	position: absolute; 
+	font-family: calibri; 
+	font-size: 10px; 
+	font-weight: bold;
+}
+
+.apac_url{
+	width: 100%; 
+	text-align: center; 
+	top: 85%;
+	position: absolute; 
+	font-size: 14px;
+	color: #316FC3;
+}

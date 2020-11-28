@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+				name="nome"
+				type="text"
+				readonly="true"
+				label="Nome:"
+				description=""
+				size="500"
+				class="inputbox"
+				default=""
+				/>
+		<field
+				name="email"
+				type="text"
+				readonly="true"
+				label="Email:"
+				description=""
+				size="500"
+				class="inputbox"
+				default=""
+				/>
+		<field
+						name="setor"
+						type="text"
+						label="Setor:"
+						description=""
+						size="500"
+						class="inputbox"
+						default=""
+						/>
+
+			<field size="5" name="status" required="true" type="list" label="Status:" description="Status">
+				<option value="1">Recebida</option>
+				<option value="2">Encaminhada para setor responsável</option>
+				<option value="3">Respondida ao cidadão</option>
+				<option value="4">Respondida - solicitação não faz parte das atribuições da Apac</option>
+				<option value="5">Solicitação não respondida</option>
+				<option value="6">Spam</option>
+			</field>
+
+		<field
+				name="mensagem"
+				type="textarea"
+				readonly="true"
+				label="Mensagem:"
+				rows="20"
+				description=""
+				size="500"
+				class="inputbox"
+				default=""
+				/>
+		<field
+				name="id"
+				type="hidden"
+				/>
+	</fieldset>
+</form>

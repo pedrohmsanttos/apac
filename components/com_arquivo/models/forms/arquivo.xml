@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+				name="id"
+				type="hidden"
+				/>
+
+		<field
+				name="titulo"
+				type="text"
+				label="Título"
+				description=""
+				size="40"
+				required="true"
+				class="inputbox"
+				default=""
+				/>
+		
+		<field type="filelist" name="arquivo" label="Escolha o arquivo:" directory="images/media" filter="\.png$|\.PNG$|\.jpg$|\.JPEG$|\.mp4$|\.MP4$|\.PDF$|\.pdf$|\.mp3$|\.MP3$"/>
+
+		
+		<field
+		    name="catid"
+		    type="sql"
+		    default=""
+		    label="Categoria:"
+		    query="SELECT id, title FROM #__categories WHERE extension = 'com_arquivo' AND parent_id = 1"
+		    key_field="id"
+		    value_field="title"
+		    required="true"
+		    >
+		    <option value="">Selecione uma Categoria</option>
+		</field>
+		
+		<field
+			name="link"
+			type="text"
+			label="Link"
+			filter="html"
+			description=""
+			size="40"
+			class="inputbox"
+			default=""
+			/>
+
+		<field name="formato" required="true" type="combo" label="Formato" description="Formato do arquivo" size="7">
+		  <option>Selecione</option>
+		  <option value="audio">Audio</option>
+		  <option value="video">Video</option>
+		  <option value="imagem">Imagem</option>
+		  <option value="documento">Documento</option>
+		</field>
+
+	</fieldset>
+</form>

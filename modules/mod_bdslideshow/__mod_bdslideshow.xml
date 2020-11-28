@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Exibição de Destaque Com Carrosel para Artigos</name>
+    <author>Inhalt Soluções Em Informática</author>
+    <version>1.0.1</version>
+    <description>Módulo para exibição de destaque com carrosel em artigos.</description>
+    <files>
+        <filename>mod_bdlideshow.xml</filename>
+        <filename module="mod_bdlideshow">mod_bdlideshow.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+    <fields name="params">
+        <fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+          <field name="big_banner_category"
+                 type="category"
+                 extension="com_content"
+                 label="Selecione a Categoria do Carrosel: "
+                 description="" />
+
+            <field type="spacer"
+                   name="myspacer"
+                     hr="true" />
+
+             <field name="left_banner_show"
+                    class="btn-group btn-group-yesno"
+                    type="radio"
+                    default="0"
+                    label="Publicar:"
+                    description="Mostra ou Esconde o Banner da Esquerda">
+                   <option value="0">Não</option>
+                   <option value="1">Sim</option>
+             </field>
+
+
+             <field name="left_banner_article"
+                    type="category"
+                    extension="com_content"
+                    label="Banner da notícia Esquerda: "
+                    description="" />
+
+            <field type="spacer"
+                   name="myspacer2"
+                     hr="true" />
+
+           <field name="right_banner_show"
+                  class="btn-group btn-group-yesno"
+                  type="radio"
+                  default="0"
+                  label="Publicar:"
+                  description="Mostra ou Esconde o Banner da Direita">
+                 <option value="0">Não</option>
+                 <option value="1">Sim</option>
+           </field>
+
+
+           <field name="right_banner_article"
+                  type="category"
+                  extension="com_content"
+                  label="Banner da notícia Direita: "
+                  description="" />
+
+        </fieldset>
+    </fields>
+</config>
+</extension>

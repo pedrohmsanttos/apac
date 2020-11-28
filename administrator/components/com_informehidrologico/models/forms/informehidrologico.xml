@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    
+    
+    <field name="checked_out" type="hidden" filter="unset"/>
+    <field
+				class="btn-group btn-group-yesno"
+				name="state"
+				type="radio"
+				default="0"
+				label="Publicado:"
+				description="">
+
+				<option value="0">Não</option>
+				<option value="1">Sim</option>
+		</field>
+    <field name="checked_out_time" default="0000-00-00 00:00:00" type="hidden" filter="unset"/>
+    <field name="created_by" type="createdby" default="0" label="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_CREATED_BY" description="COM_INFORMEHIDROLOGICO_FORM_DESC_INFORMEHIDROLOGICO_CREATED_BY" hidden="true" hint="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_CREATED_BY"/>
+    <field name="modified_by" type="modifiedby" default="0" label="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_MODIFIED_BY" description="COM_INFORMEHIDROLOGICO_FORM_DESC_INFORMEHIDROLOGICO_MODIFIED_BY" hidden="true" hint="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_MODIFIED_BY"/>
+    <field name="titulo" required="true" filter="safehtml" type="text" label="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_TITULO" description="COM_INFORMEHIDROLOGICO_FORM_DESC_INFORMEHIDROLOGICO_TITULO" hint="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_TITULO"/>
+    <field name="tipo" required="true" extension="com_informehidrologico" type="category" label="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_TIPO" description="COM_INFORMEHIDROLOGICO_FORM_DESC_INFORMEHIDROLOGICO_TIPO" hint="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_TIPO"/>
+    <field name="observacao" filter="safehtml" type="textarea" label="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_OBSERVACAO" description="COM_INFORMEHIDROLOGICO_FORM_DESC_INFORMEHIDROLOGICO_OBSERVACAO" hint="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_OBSERVACAO"/>
+    <field name="tags" multiple="true" filter="safehtml" type="tag" label="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_TAGS" description="COM_INFORMEHIDROLOGICO_FORM_DESC_INFORMEHIDROLOGICO_TAGS" hint="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_TAGS"/>
+    <field name="arquivo" type="FileMultiple" label="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_ARQUIVO" description="COM_INFORMEHIDROLOGICO_FORM_DESC_INFORMEHIDROLOGICO_ARQUIVO" hint="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_ARQUIVO"/>
+    <field name="publicacao" required="true" type="calendar"	format="%d-%m-%Y %H:%M:%S" showtime="true" filter="user_utc" label="Data de Publicação" description="COM_INFORMEHIDROLOGICO_FORM_DESC_INFORMEHIDROLOGICO_PUBLICACAO" />
+    <field
+				name="ordering"
+				type="number"
+				default="0"
+				label="Ordem:"
+				description=""
+				min="1"
+				step="1"
+				/>
+  </fieldset>
+</form>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Seletor de plano de fundo</name>
+    <author>Inhalt Soluções Em Informática</author>
+    <version>1.0.0</version>
+    <description>Módulo Seletor de plano de fundo.</description>
+    <files>
+        <filename>mod_planodefundo.xml</filename>
+        <filename module="mod_planodefundo">mod_planodefundo.php</filename>
+        <folder>tmpl</folder>
+        <filename>index.html</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>tmpl/default.php</filename>
+    </files>
+    <config>
+    <fields name="params">
+        <fieldset name="basic">
+            <field name="imagem" type="media" label="Selecione a imagem de fundo: (1365x698)" directory="stories" />
+        </fieldset>
+    </fields>
+</config>
+</extension>

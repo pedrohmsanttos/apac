@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Sitemap/Rodapé</name>
+    <author>Inhalt Soluções Em Informática</author>
+    <version>1.0.0</version>
+    <description>Módulo para exibição do Rodapé.</description>
+    <files>
+        <filename>mod_rodape.xml</filename>
+        <filename>helper.php</filename>
+        <filename module="mod_rodape">mod_rodape.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>tmpl/default.php</filename>
+    </files>
+    <config>
+    <fields name="params">
+        <fieldset name="basic">
+            
+            <field name="categoria_1" type="category" extension="com_content" label="Categoria 1:" description="" />
+            
+            <field name="categoria_2" type="category" extension="com_content" label="Categoria 2:" description="" />
+          
+            <field name="categoria_3" type="category" extension="com_content" label="Categoria 3:" description="" />
+            
+            <field name="categoria_4" type="category" extension="com_content" label="Categoria 4:" description="" />
+
+            <field name="categoria_5" type="category" extension="com_content" label="Categoria 5:" description="" />
+            
+            <field name="categoria_6" type="category" extension="com_content" label="Categoria 6:" description="" />
+            
+            <field name="html_endr" type="editor" label="Título" description="" row="5" width="80" filter="safehtml" />
+
+        </fieldset>
+    </fields>
+</config>
+</extension>

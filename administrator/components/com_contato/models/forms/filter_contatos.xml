@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_BANNERS_SEARCH_IN_TITLE"
+			hint="JSEARCH_FILTER"
+			class="js-stools-search-string"
+		/>
+		<field
+			name="published"
+			type="status"
+			label="JOPTION_SELECT_PUBLISHED"
+			statuses="0,1"
+			description="JOPTION_SELECT_PUBLISHED_DESC"
+			onchange="this.form.submit();"
+			>
+			<option value="">JOPTION_SELECT_PUBLISHED</option>
+		</field>
+		<field
+			name="status"
+			type="list"
+			label="Selecione o setor"
+			description="JOPTION_SELECT_PUBLISHED_DESC"
+			onchange="this.form.submit();"
+			>
+			<option value="">-- Selecione um status --</option>
+			<option value="1">Recebida</option>
+			<option value="2">Encaminhada para setor responsável</option>
+			<option value="3">Respondida ao cidadão</option>
+			<option value="4">Respondida - solicitação não faz parte das atribuições da Apac</option>
+			<option value="5">Solicitação não respondida</option>
+			<option value="6">Spam</option>
+			
+		</field>
+
+		<field
+			name="setor"
+			type="sql"
+			default="-- Selecione um setor --"
+			label="Setor:"
+			query="SELECT nome FROM #__contato_setor"
+			key_field="nome"
+			onchange="this.form.submit();"
+			>
+
+			<option value="">-- Selecione um setor --</option>
+		</field>
+		
+		<!-- Keep "_dateformat" suffix for date validation on form submit -->
+		<field name="dta_ini" type="calendar" label="Data inicial" />
+		<!-- Keep "_dateformat" suffix for date validation on form submit -->
+		<field name="dta_end" type="calendar" label="Data final" />
+	</fields>
+	<fields name="list">
+		<field
+			name="limit"
+			type="limitbox"
+			class="input-mini"
+			default="25"
+			label="COM_CONTENT_LIST_LIMIT"
+			description="COM_HELLOWORLD_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Governadores">
+		<message>Governador</message>
+	</layout>
+	<fields name="request"
+			addfieldpath="/administrator/components/com_governador/models/fields">
+		<fieldset name="request">
+			<field
+					name="id"
+					type="governador"
+					label="Governador"
+					description="Governador"
+					/>		
+		</fieldset>
+	</fields>
+</metadata>

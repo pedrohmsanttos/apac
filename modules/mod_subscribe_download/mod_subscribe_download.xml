@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+    <name>Subscribe for download</name>
+    <author>CNP Integrations - http://www.cnpintegrations.com</author>
+    <creationDate>Oct 2013</creationDate>
+    <copyright>Creative networks Protocol Inc. DBA www.cnpintegrations.com</copyright>
+    <license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPL or later</license>
+    <authorUrl>http://www.cnpintegrations.com</authorUrl>
+    <version>2.1</version>
+    <description>Subscribe for download - Joomla 3x</description>
+    
+    <files>
+        <filename module="mod_subscribe_download">mod_subscribe_download.php</filename>        
+        <folder>tmpl</folder>
+        <folder>lib</folder>
+        <folder>elements</folder>
+        <filename>index.html</filename>
+        <filename>mod_subscribe_download.xml</filename>
+    </files>
+   
+    <languages>
+        <language tag="en-GB">en-GB.mod_subscribe_download.ini</language>
+        <language tag="en-GB">en-GB.mod_subscribe_download.sys.ini</language>
+    </languages>
+	
+    <config>
+        <fields name="params">
+            <fieldset name="basic" >
+                <field name="moduleclass_sfx" type="text" default="" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+                <field name="image_filename" 
+                       type="text" default="images/stories/" 
+                       label="IMAGE_FILENAME_LABEL" 
+                       description="IMAGE_FILENAME_DESCRIPTION" size="50"/>   
+                <field name="url_download" 
+                                      type="text" default="" 
+                                      label="URL_DOWNLOAD_LABEL" 
+                                      description="URL_DOWNLOAD_DESCRIPTION" size="50"/>   
+                <field name="term_article" type="text" default="" description="TERM_ARTICLE_DESC" size="50"/>
+            </fieldset>
+            <fieldset name="csv" label="CSV_TITLE" addfieldpath="/modules/mod_subscribe_download/elements/">
+                <field type="link" name="link" label="CSV_LABEL" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Exibição das Redes Sociais</name>
+    <author>Inhalt Soluções Em Informática</author>
+    <version>1.0.0</version>
+    <description>Módulo de exibição das redes sociais.</description>
+    <files>
+        <filename>mod_redesociais.xml</filename>
+        <filename module="mod_redesociais">mod_redesociais.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+        <filename>tmpl/index.html</filename>
+        <filename>tmpl/default.php</filename>
+    </files>
+    <config>
+    <fields name="params">
+        <fieldset name="basic">
+            <field name="titulo" type="textarea" rows="5" maxlength="60" label="Título:" filter="raw" />
+            <field name="facebook" type="text" maxlength="200" label="Facebook:" filter="string" />
+            <field name="instagram" type="text" maxlength="200" label="Instagram:" filter="string" />
+            <field name="twitter" type="text" maxlength="200" label="Twitter:" filter="string" />
+            <field name="youtube" type="text" maxlength="200" label="YouTube:" filter="string" />
+            <field name="imagem_fundo" type="media" preview="true" maxlength="200" label="Imagem de Fundo (980X650):" directory="stories" />
+        </fieldset>
+    </fields>
+</config>
+</extension>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Exibição de Serviços</name>
+    <author>Inhalt Soluções Em Informática</author>
+    <version>1.0.0</version>
+    <description>Módulo para exibição de Serviços. Os cadastros de serviços são pelo componente de serviços.</description>
+    <files>
+        <filename>mod_servicos.xml</filename>
+        <filename module="mod_servicos">mod_servicos.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>Mobile_Detect.php</filename>
+        <folder>tmpl</folder>
+        <filename>tmpl/index.html</filename>
+        <filename>tmpl/default.php</filename>
+    </files>
+    <config>
+    <fields name="params">
+        <fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+
+            <field name="title_section"
+                   type="textarea"
+                   label="Descrição da página"
+                   required="true"
+                   description=""
+                   rows="5"
+                   size="65"
+                   filter="raw" />
+
+            <field name="article_id"
+                   type="modal_article"
+                   default=""
+                   required="true"
+                   label="Escolha o artigo de serviços"
+                   description="" />
+
+        </fieldset>
+    </fields>
+</config>
+</extension>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="ordering"/>
+    
+    <field name="checked_out" type="hidden" filter="unset"/>
+    <field name="checked_out_time" default="0000-00-00 00:00:00" type="hidden" filter="unset"/>
+    <field name="created_by" type="createdby" default="0" label="COM_LICITACOES_FORM_LBL_LICITACAO_CREATED_BY" description="COM_LICITACOES_FORM_DESC_LICITACAO_CREATED_BY" hidden="true" hint="COM_LICITACOES_FORM_LBL_LICITACAO_CREATED_BY"/>
+    <field name="modified_by" type="modifiedby" default="0" label="COM_LICITACOES_FORM_LBL_LICITACAO_MODIFIED_BY" description="COM_LICITACOES_FORM_DESC_LICITACAO_MODIFIED_BY" hidden="true" hint="COM_LICITACOES_FORM_LBL_LICITACAO_MODIFIED_BY"/>
+    
+    <!-- <field name="publicado" default="true" type="list" required="true" message="Campo &quot;Publicado&quot; é obrigatório!" label="COM_LICITACOES_FORM_LBL_LICITACAO_PUBLICADO" description="COM_LICITACOES_FORM_DESC_LICITACAO_PUBLICADO" hint="COM_LICITACOES_FORM_LBL_LICITACAO_PUBLICADO"/> -->
+    
+   <!--  <field name="publicado" type="radio" default="0" required="true" message="Campo &quot;Publicado&quot; é obrigatório!" label="COM_LICITACOES_FORM_LBL_LICITACAO_PUBLICADO" description="COM_LICITACOES_FORM_DESC_LICITACAO_PUBLICADO">
+      <option value="0">Não</option>
+      <option value="1">Sim</option>
+    </field> -->
+
+    <field
+      class="btn-group btn-group-yesno"
+      name="state"
+      type="radio"
+      default="0"
+      label="Publicado:"
+      description="">
+
+      <option value="0">Não</option>
+      <option value="1">Sim</option>
+    </field>
+
+    <!-- <field
+      class="btn-group btn-group-yesno"
+      name="publicado"
+      type="radio"
+      default="1"
+      label="COM_LICITACOES_FORM_LBL_LICITACAO_PUBLICADO"
+      description="COM_LICITACOES_FORM_DESC_LICITACAO_PUBLICADO">
+
+      <option value="0">Não</option>
+      <option value="1">Sim</option>
+        </field> -->
+
+    <field name="titulo" filter="safehtml" type="text" required="true" message="Campo &quot;Título&quot; é obrigatório!" label="COM_LICITACOES_FORM_LBL_LICITACAO_TITULO" description="COM_LICITACOES_FORM_DESC_LICITACAO_TITULO" hint="COM_LICITACOES_FORM_LBL_LICITACAO_TITULO"/>
+    <field name="resumo" filter="safehtml" type="textarea" required="true" message="Campo &quot;Resumo&quot; é obrigatório!" label="COM_LICITACOES_FORM_LBL_LICITACAO_RESUMO" description="COM_LICITACOES_FORM_DESC_LICITACAO_RESUMO" hint="COM_LICITACOES_FORM_LBL_LICITACAO_RESUMO"/>
+    
+    <field name="data_licitacao" default="" format="%d/%m/%Y" type="calendar" class="inputbox" filter="safehtml" required="true" message="Campo &quot;Data da Licitação&quot; é obrigatório!" label="COM_LICITACOES_FORM_LBL_LICITACAO_DATA_LICITACAO" description="COM_LICITACOES_FORM_DESC_LICITACAO_DATA_LICITACAO" hint="COM_LICITACOES_FORM_LBL_LICITACAO_DATA_LICITACAO"/>
+    
+    <field name="numero_processo" filter="safehtml" type="text" required="true" message="Campo " label="COM_LICITACOES_FORM_LBL_LICITACAO_NUMERO_PROCESSO" description="COM_LICITACOES_FORM_DESC_LICITACAO_NUMERO_PROCESSO" hint="COM_LICITACOES_FORM_LBL_LICITACAO_NUMERO_PROCESSO"/>
+    <field name="ano_processo" filter="safehtml" type="text" required="true" message="Campo &quot;Ano&quot; é obrigatório!" label="COM_LICITACOES_FORM_LBL_LICITACAO_ANO_PROCESSO" description="COM_LICITACOES_FORM_DESC_LICITACAO_ANO_PROCESSO" hint="COM_LICITACOES_FORM_LBL_LICITACAO_ANO_PROCESSO"/>
+    
+    <!-- <field name="modalidade" type="list" required="true" message="Campo " label="COM_LICITACOES_FORM_LBL_LICITACAO_MODALIDADE" description="COM_LICITACOES_FORM_DESC_LICITACAO_MODALIDADE" hint="COM_LICITACOES_FORM_LBL_LICITACAO_MODALIDADE"/> -->
+
+    <field
+    name="modalidade"
+    type="sql"
+    required="true"
+    value_field="nome"
+    label="COM_LICITACOES_FORM_LBL_LICITACAO_MODALIDADE"
+    description="COM_LICITACOES_FORM_DESC_LICITACAO_MODALIDADE"
+    sql_order="id ASC"
+    query="SELECT id, nome FROM #__modalidade_licitacao WHERE ativo = 1"
+    key_field="id">
+    <option value="">Selecione uma modalidade</option>
+    </field>
+
+    <field name="numero_modalidade" filter="safehtml" type="text" required="true" message="Campo &quot;N° Modalidade&quot; é obrigatório!" label="COM_LICITACOES_FORM_LBL_LICITACAO_NUMERO_MODALIDADE" description="COM_LICITACOES_FORM_DESC_LICITACAO_NUMERO_MODALIDADE" hint="COM_LICITACOES_FORM_LBL_LICITACAO_NUMERO_MODALIDADE"/>
+    <field name="ano_modalidade" filter="safehtml" type="text" required="true" message="Campo &quot;Ano da Modalidade&quot; é obrigatório!" label="COM_LICITACOES_FORM_LBL_LICITACAO_ANO_MODALIDADE" description="COM_LICITACOES_FORM_DESC_LICITACAO_ANO_MODALIDADE" hint="COM_LICITACOES_FORM_LBL_LICITACAO_ANO_MODALIDADE"/>
+    <field name="objeto" filter="safehtml" type="textarea" required="true" message="Campo &quot;Objeto&quot; é obrigatório!" label="COM_LICITACOES_FORM_LBL_LICITACAO_OBJETO" description="COM_LICITACOES_FORM_DESC_LICITACAO_OBJETO" hint="COM_LICITACOES_FORM_LBL_LICITACAO_OBJETO"/>
+    
+    <field name="data_publicacao" default="" format="%d/%m/%Y" type="calendar" class="inputbox" filter="safehtml" required="true" message="Campo &quot;Data da Publicação&quot; é obrigatório!" label="COM_LICITACOES_FORM_LBL_LICITACAO_DATA_PUBLICACAO" description="COM_LICITACOES_FORM_DESC_LICITACAO_DATA_PUBLICACAO" hint="COM_LICITACOES_FORM_LBL_LICITACAO_DATA_PUBLICACAO"/>
+    
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+</form>

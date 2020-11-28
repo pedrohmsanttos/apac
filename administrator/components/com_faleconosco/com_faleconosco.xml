@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component"
+           version="3.2.0"
+           method="upgrade">
+
+	<name>Fale Conosco</name>
+	<creationDate>Novembro 2017</creationDate>
+	<author>Aloisio Soares</author>
+	<authorEmail>aloisio.soares@inhalt.com.br</authorEmail>
+	<authorUrl>http://www.inhalt.com.br/</authorUrl>
+	<copyright>Inhalt Soluções em Informática Todos os Direitos Reservados</copyright>
+	<license>License</license>
+	<version>1.2.1</version>
+	<description>Formulário de Contato do Site</description>
+
+	<files folder="site">
+		<filename>index.html</filename>
+    <filename component="com_contato">contato.php</filename>
+		<filename>contato_view.php</filename>
+		<filename>contato.xml</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<administration>
+		<menu link='index.php?option=com_contato'>Fale Conosco</menu>
+		<files folder="admin">
+      <filename>index.html</filename>
+      <filename>contato.php</filename>
+      <filename>controller.php</filename>
+      <folder>sql</folder>
+      <folder>models</folder>
+      <folder>views</folder>
+      <folder>tables</folder>
+      <folder>controllers</folder>
+      <folder>language</folder>
+		</files>
+	</administration>
+
+</extension>

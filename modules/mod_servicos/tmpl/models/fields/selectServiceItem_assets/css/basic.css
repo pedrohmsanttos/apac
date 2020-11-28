@@ -1,0 +1,39 @@
+#basic-modal-content {display:none;}
+.basic-modal {display:none;}
+
+/* Overlay */
+#simplemodal-overlay {background-color:#000;}
+
+/* Container */
+#simplemodal-container {height:360px; width:600px; color:black; background-color:#F0F0F0; border:4px solid #444; padding:12px;}
+#simplemodal-container .simplemodal-data {padding:8px;}
+#simplemodal-container code {background:#141414; border-left:3px solid #65B43D; color:black; display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
+#simplemodal-container a {color:#ddd;}
+#simplemodal-container a.modalCloseImg {background:url(../img/basic/x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
+#simplemodal-container h3 {color:#84b8d9;}
+
+.bg-selected{
+	background-color: #D9EDF7;
+	font-weight: bold;
+}
+
+table{
+	overflow-y: scroll;
+}
+
+#simplemodal-container{
+	height: 80% !important;
+	width: 70% !important;
+	left: 13% !important;
+}
+
+.bt-mar-botn{
+	margin-top:-8px;
+}
+
+.msg-ok{
+	padding: 15px;
+	background-color: #DFF0D8;
+	margin-bottom: 2%;
+	border-radius: 8px;
+}

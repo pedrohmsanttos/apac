@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_licitacoes</name>
+    <creationDate>2018-12-26</creationDate>
+    <copyright>2018 Pedro Santos</copyright>
+    <license>GNU General Public License versão 2 ou posterior; consulte o arquivo License. txt</license>
+    <author>Pedro Santos</author>
+    <authorEmail>phmsanttos@gmail.com</authorEmail>
+    <authorUrl>http://inhalt.com.br/</authorUrl>
+    <version>CVS: 1.0.0</version>
+    <description></description>
+    
+    
+    
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="postgresql" charset="utf8">sql/install.postgresql.utf8.sql</file>
+        </sql>
+    </install>
+    <update> <!-- Runs on update -->
+        <sql>
+            <file driver="postgresql" charset="utf8">sql/update.mysql.utf8.sql</file>
+        </sql>
+    </update>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="postgresql" charset="utf8">sql/uninstall.postgresql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>licitacoes.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+    </files>
+    <media destination="com_licitacoes" folder="media">
+        <folder>js</folder>
+        <folder>css</folder>
+    </media>
+    <languages folder="site/languages">
+        
+			<language tag="en-GB">en-GB/en-GB.com_licitacoes.ini</language>
+			<language tag="pt-BR">pt-BR/pt-BR.com_licitacoes.ini</language>
+    </languages>
+    <administration>
+        <menu>COM_LICITACOES</menu>
+        <!-- <submenu>
+            
+			<menu link="option=com_licitacoes&amp;view=licitacoes" view="licitacoes" alt="Licitacoes/Licitacoes">COM_LICITACOES_TITLE_LICITACOES</menu>
+
+        </submenu> -->
+
+        <submenu>
+            <menu link="option=com_licitacoes&amp;view=licitacoes" view="licitacoes" alt="Licitacoes/Licitacoes">Licitações</menu>
+            <menu link="option=com_licitacoes&amp;view=arquivos" view="arquivos" alt="Licitacoes/arquivos">Arquivos</menu>
+            <menu link="option=com_licitacoes&amp;view=relatorio" view="relatorio" alt="Licitacoes/relatorio">Relatórios</menu>
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>licitacoes.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="administrator/languages">
+            
+			<language tag="en-GB">en-GB/en-GB.com_licitacoes.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_licitacoes.sys.ini</language>
+			<language tag="pt-BR">pt-BR/pt-BR.com_licitacoes.ini</language>
+			<language tag="pt-BR">pt-BR/pt-BR.com_licitacoes.sys.ini</language>
+        </languages>
+    </administration>
+    <config>
+        <fields name="params">
+            <fieldset name="component">
+                <field name="save_history" default="0" />
+            </fieldset>
+        </fields>
+    </config>
+    <plugins>
+        <plugin group="search" plugin="licitacoes"/>
+    </plugins>
+    
+</extension>
+<!-- Component built by the Joomla Component Creator -->
+<!-- http://www.component-creator.com/ -->

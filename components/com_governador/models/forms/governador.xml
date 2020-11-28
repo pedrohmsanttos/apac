@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+				name="id"
+				type="hidden"
+				/>
+		<field
+				name="nome"
+				type="text"
+				label="Nome:"
+				description=""
+				maxlength="200"
+				size="40"
+				class="inputbox"
+				default=""
+				/>
+		<field
+				name="ano"
+				type="text"
+				label="Ano:"
+				description=""
+				maxlength="200"
+				size="40"
+				class="inputbox"
+				default=""
+				/>
+		
+		<field 
+				name="imagem" 
+				label="Foto:"
+				type="media" 
+				directory="governadores" 
+		/>
+	</fieldset>
+</form>

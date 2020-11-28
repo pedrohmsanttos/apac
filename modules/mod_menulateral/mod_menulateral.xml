@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Menu Lateral</name>
+    <author>Inhalt Soluções Em Informática</author>
+    <creationDate>2017-04-28</creationDate>
+    <version>2.0.0</version>
+    <description>Módulo para exibição do menu lateral.</description>
+    <files>
+        <filename>mod_menulateral.xml</filename>
+        <filename module="mod_menulateral">mod_menulateral.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field label="Esconder pelo menu/alias separados por ;"
+                       type="textarea"
+                       name="esconder" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

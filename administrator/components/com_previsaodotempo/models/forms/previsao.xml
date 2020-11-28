@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+  
+    <field
+      class="btn-group btn-group-yesno"
+      name="state"
+      type="radio"
+      default="0"
+      label="Publicado:"
+      description="">
+
+      <option value="0">Não</option>
+      <option value="1">Sim</option>
+		</field>
+
+    <field
+      name="id"
+      type="hidden"
+      />
+        
+    <field 
+      name="checked_out" 
+      type="hidden" 
+      filter="unset"
+      />
+
+    <field
+      name="ordering"
+      type="hidden"
+      default="0"
+      label="Ordem:"
+      description=""
+      min="1"
+      step="1"
+      />
+    
+    <field 
+      name="checked_out_time" 
+      default="0000-00-00 00:00:00" 
+      type="hidden" 
+      filter="unset"
+      />
+    
+    <field 
+      name="created_by" 
+      type="createdby" 
+      label="COM_PREVISAODOTEMPO_FORM_LBL_PREVISAO_CREATED_BY" 
+      description="COM_PREVISAODOTEMPO_FORM_DESC_PREVISAO_CREATED_BY" 
+      hidden="true" 
+      hint="COM_PREVISAODOTEMPO_FORM_LBL_PREVISAO_CREATED_BY"
+      />
+    
+    <field 
+      name="modified_by" 
+      type="modifiedby" 
+      default="0" 
+      label="COM_PREVISAODOTEMPO_FORM_LBL_PREVISAO_MODIFIED_BY" 
+      description="COM_PREVISAODOTEMPO_FORM_DESC_PREVISAO_MODIFIED_BY" 
+      hidden="true" 
+      hint="COM_PREVISAODOTEMPO_FORM_LBL_PREVISAO_MODIFIED_BY"
+      />
+    
+    <field 
+      name="datavlida" 
+      class="inputbox"  
+      showtime="true" 
+      type="calendar" 
+      required="true" 
+      format="%d/%m/%Y %H:%M"
+      message="Data Válida é tem que ser informada " 
+      label="Data Válida/Horário" 
+      description="COM_PREVISAODOTEMPO_FORM_DESC_PREVISAO_DATAVLIDA" 
+      />
+
+    <field 
+      name="observaes" 
+      filter="safehtml" 
+      type="textarea" 
+      label="COM_PREVISAODOTEMPO_FORM_LBL_PREVISAO_OBSERVAES" 
+      description="COM_PREVISAODOTEMPO_FORM_DESC_PREVISAO_OBSERVAES" 
+      hint="COM_PREVISAODOTEMPO_FORM_LBL_PREVISAO_OBSERVAES"
+      />
+    
+    <field 
+      name="tipo" 
+      type="list" 
+      required="true" 
+      message="Tipo tem que ser informado" 
+      >
+      <option value="">- Selecione um tipo -</option>
+      <option value="hoje–manha">Hoje manhã</option>
+      <option value="hoje–tarde">Hoje tarde</option>
+      <option value="amanha">Amanhã</option>
+    </field>
+
+    
+
+  </fieldset>
+
+</form>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+				name="id"
+				type="hidden"
+				/>
+
+		<field
+				class="btn-group btn-group-yesno"
+				name="published"
+				type="radio"
+				default="0"
+				label="Publicado:"
+				description="">
+
+				<option value="0">Não</option>
+				<option value="1">Sim</option>
+		</field>
+
+		<field
+			name="titulo"
+			type="text"
+			label="Título:"
+			description=""
+			required="true"
+			maxlength="200"
+			size="40"
+			class="inputbox"
+			default=""
+			/>
+
+		<field
+				name="tipo"
+				type="category"
+				required="true"
+				extension="com_avisohidrologico"
+				label="Tipo do Aviso Hidrologico:"
+				description=""
+				published="1"
+				>
+			<option value="">- Selecione -</option>
+		</field>
+
+		<!--field
+			    name="associados"
+			    type="sql"
+			    default=""
+			    label="Categoria de ítens associados:"
+			    query="SELECT id, title FROM #__categories WHERE extension = 'com_arquivo'"
+			    key_field="id"
+			    value_field="title"
+			    >
+		    <option value="">- Selecione -</option>
+		</field-->
+
+		<field
+				name="ordering"
+				type="number"
+				default="0"
+				label="Ordem:"
+				description=""
+				min="1"
+				step="1"
+				/>
+
+		<field
+				name="identificador"
+				type="text"
+				label="Identificador:"
+				description=""
+				readonly="true"
+				maxlength="200"
+				size="40"
+				class="inputbox"
+				default=""
+				/>
+
+			<field
+					name="descricao"
+					type="textarea"
+					label="Descrição:"
+					description=""
+					maxlength="500"
+					size="40"
+					class="inputbox"
+					default=""
+					/>
+		<field
+				name="conteudo"
+				type="editor"
+				label="Conteúdo:"
+				required="true"
+				description=""
+				maxlength="1000"
+				size="40"
+				class="inputbox"
+				/>
+
+		<field
+				name="inicio"
+				required="true"
+				type="calendar"
+				label="Início:"
+				size="22"
+				format="%d-%m-%Y %H:%M:%S"
+				showtime="true"
+				filter="user_utc"
+				/>
+
+		<field
+				name="validade"
+				required="true"
+				type="calendar"
+				label="Validade:"
+				size="22"
+				format="%d-%m-%Y %H:%M:%S"
+				showtime="true"
+				filter="user_utc"
+				/>
+
+		<field
+				name="tags"
+				type="tag"
+				label="JTAG"
+				description="JTAG_DESC"
+				class="inputbox span12 small"
+				multiple="true"
+				/>
+
+		<field
+			    name="regioes"
+			    type="sql"
+			    default="0"
+				class="inputbox span12 small"
+			    label="Região:"
+				multiple="true"
+			    query="SELECT id,title FROM #__regioes"
+			    key_field="id"
+			    value_field="title"
+			    >
+		</field>
+
+		<field
+				name="arquivo_1"
+				type="file"
+				class="inputbox"
+				label="Arquivo 1:"
+				directory="images"
+				/>
+
+		<field
+	 			 name="arquivo_2"
+	 			 type="file"
+	 			 class="inputbox"
+	 			 label="Arquivo 2:"
+	 			 directory="images"
+	 			 />
+
+	 <field
+	 			 name="arquivo_3"
+	 			 type="file"
+	 			 class="inputbox"
+	 			 label="Arquivo 3:"
+	 			 directory="images"
+	 			 />
+
+	 <field
+					name="arquivo_4"
+					type="file"
+					class="inputbox"
+					label="Arquivo 4:"
+					directory="images"
+					/>
+
+	</fieldset>
+</form>

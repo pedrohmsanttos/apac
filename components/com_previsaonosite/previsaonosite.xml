@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" client="site" method="upgrade">
+	<name>Previsão no site</name>
+	<author>Matheus Moreira</author>
+	<creationDate>03/12/2018</creationDate>
+	<authorEmail>contato@inhalt.com.br</authorEmail>
+	<authorUrl>http://inhalt.com.br</authorUrl>
+	<version>1.0.0</version>
+	<description>Previsão no site</description>
+	<files>
+		<filename component="com_previsaonosite">previsaonosite.php</filename>
+		<filename>previsaonosite_view.php</filename>
+		<filename>previsaonosite.xml</filename>
+		<filename>index.html</filename>
+	</files>
+	
+</extension>

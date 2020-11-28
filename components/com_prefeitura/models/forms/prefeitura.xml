@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset >
+		<field
+				name="id"
+				type="hidden"
+				/>
+
+		<field
+				name="nome"
+				type="text"
+				label="Prefeitura:"
+				description=""
+				size="100"
+				required="true"
+				class="inputbox"
+				default=""
+				/>
+		<field
+				name="link"
+				type="html"
+				label="Link:"
+				description=""
+				size="100"
+				class="inputbox"
+				default=""
+				/>
+		
+		<field				
+				name="catid"				
+				type="category"				
+				extension="com_prefeitura"				
+				class="inputbox"				
+				default=""				
+				label="Selecione a mesorregião:"				
+				description=""				
+				required="true"
+		/>
+		
+	</fieldset>
+</form>

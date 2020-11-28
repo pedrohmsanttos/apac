@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" client="site" method="upgrade">
+	<name>Informe hidrologico</name>
+	<author>Matheus Moreira</author>
+	<creationDate>23/07/2018</creationDate>
+	<authorEmail>contato@inhalt.com.br</authorEmail>
+	<authorUrl>http://inhalt.com.br</authorUrl>
+	<version>1.0.0</version>
+	<description>Componente de exibição de Informe hidrologico</description>
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>informehidrologico.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+    </files>
+    <media destination="com_informehidrologico" folder="media">
+        <folder>js</folder>
+        <folder>css</folder>
+    </media>
+    <languages folder="site/languages">
+			<language tag="en-GB">en-GB/en-GB.com_informehidrologico.ini</language>
+			<language tag="pt-BR">pt-BR/pt-BR.com_informehidrologico.ini</language>
+    </languages>
+	<administration>
+		<menu link="option=com_informehidrologico">Informe hidrologico - Front-end</menu>
+	    <files>
+	    	<filename component="com_informehidrologico">Informe hidrologico.php</filename>
+	    </files>
+	</administration>
+</extension>

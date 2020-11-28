@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Exibição de listage de mapa de trabalho por cidade</name>
+    <author>Inhalt Soluções Em Informática</author>
+    <version>1.0.0</version>
+    <description>Módulo para exibição da Listagem de mapas do trabalho por cidade.</description>
+    <files>
+        <filename>mod_listagemapatrabalho.xml</filename>
+        <filename module="mod_listagemapatrabalho">mod_listagemapatrabalho.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>tmpl/default.php</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="description" type="textarea" label="Descrição da página" filter="string" />
+                <field name="catid" type="category" extension="com_content" label="Categoria do mapa de trabalho:" description="" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

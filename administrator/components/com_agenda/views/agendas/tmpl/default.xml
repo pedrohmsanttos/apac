@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Arquivos">
+		<message>Orgãos</message>
+	</layout>
+	<fields name="request"
+			addfieldpath="/administrator/components/com_arquivo/models/fields">
+		<fieldset name="request">
+			<field
+					name="id"
+					type="arquivo"
+					label="Arquivo"
+					description="Arquivo"
+					/>		</fieldset>
+	</fields>
+</metadata>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+   <!--  <field
+      class="btn-group btn-group-yesno"
+      name="state"
+      type="radio"
+      default="1"
+      label="Publicado:"
+      description="">
+
+      <option value="0">Não</option>
+      <option value="1">Sim</option>
+		</field> -->
+
+    <field name="state" type="hidden" default="1" />
+
+    <field 
+      name="titulo" 
+      filter="safehtml" 
+      type="text" 
+      label="Título:" 
+      description="Informar o título do Arquivo"
+      required="true"
+    />
+
+    <field 
+      name="ordering" 
+      filter="safehtml" 
+      type="text" 
+      label="Ordem:" 
+      description="Informar a ordem:"
+      required="true"
+    />
+
+    <field name="tipo" type="radio" default="0" label="Selecione o tipo do arquivo:" description="">
+      <option value="0">Arquivo Comum</option>
+      <option value="1">Edital</option>
+    </field>
+
+    <field
+    name="id_licitacao"
+    type="sql"
+    required="true"
+    value_field="nome"
+    label="Licitação:"
+    description="Licitação:"
+    query="SELECT id, concat_ws('/',numero_processo,ano_processo) as nome FROM #__licitacoes WHERE state = 1"
+    key_field="id">
+    <option value="">Selecione uma licitação</option>
+    </field>
+    
+    <field 
+      name="arquivo" 
+      type="file" 
+      label="Arquivo" 
+      description="Selecione um arquivo" 
+    />
+    
+    <field 
+      name="checked_out" 
+      type="hidden" 
+      filter="unset"
+    />
+    
+    <field 
+      name="checked_out_time" 
+      default="0000-00-00 00:00:00" 
+      type="hidden" 
+      filter="unset"
+    /> 
+
+    <field 
+      name="created_by" 
+      type="createdby" 
+      default="0" 
+      label="COM_PREVISAODOTEMPO_FORM_LBL_PREVISAO_CREATED_BY" 
+      description="COM_PREVISAODOTEMPO_FORM_DESC_PREVISAO_CREATED_BY" 
+      hidden="true" 
+      hint="COM_PREVISAODOTEMPO_FORM_LBL_PREVISAO_CREATED_BY"
+    />
+    
+    <field 
+      name="modified_by" 
+      type="modifiedby" 
+      default="0" 
+      label="COM_PREVISAODOTEMPO_FORM_LBL_PREVISAO_MODIFIED_BY" 
+      description="COM_PREVISAODOTEMPO_FORM_DESC_PREVISAO_MODIFIED_BY" 
+      hidden="true" 
+      hint="COM_PREVISAODOTEMPO_FORM_LBL_PREVISAO_MODIFIED_BY"
+    />
+
+    <field
+				name="id"
+				type="hidden"
+        default="0" 
+				/>
+ </fieldset>
+
+</form>

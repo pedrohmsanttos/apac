@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form >
+	<fieldset >
+		<field
+				name="id"
+				type="hidden"
+				/>
+		<field
+				name="published"
+				type="hidden"
+				default="1"
+				/>
+		<field
+				name="descricao"
+				type="text"
+				label="Descrição"
+				description=""
+				size="40"
+				class="inputbox"
+				default=""
+				/>
+		<field
+				name="numero"
+				type="textarea"
+				label="Número"
+				filter="raw"
+				rows="5"
+				description=""
+				size="80"
+				class="inputbox"
+				default=""
+				/>
+
+		<field
+				name="catid"
+				type="category"
+				extension="com_telefone"
+				class="inputbox"
+				default=""
+				label="Categoria"
+				description=""
+				required="true"
+		/>
+	</fieldset>
+</form>

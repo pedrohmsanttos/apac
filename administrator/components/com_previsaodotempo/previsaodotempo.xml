@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_previsaodotempo</name>
+    <creationDate>2018-11-01</creationDate>
+    <copyright>2018 Inhalt</copyright>
+    <license>GNU General Public License versão 2 ou posterior; consulte o arquivo License. txt</license>
+    <author>Matheus Felipe</author>
+    <authorEmail>matheus.felipe@inhalt.com.br</authorEmail>
+    <authorUrl>http://inhalt.com.br/</authorUrl>
+    <version>CVS: 1.0.0</version>
+    <description>Componente responsável por gerir a previsão do tempo da APAC.</description>
+    
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+            <file driver="postgresql" charset="utf8">sql/install.postgresql.utf8.sql</file>
+        </sql>
+    </install>
+    <update> <!-- Runs on update -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/update.mysql.utf8.sql</file>
+        </sql>
+    </update>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+            <file driver="postgresql" charset="utf8">sql/uninstall.postgresql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <media destination="com_previsaodotempo" folder="media">
+        <folder>js</folder>
+        <folder>css</folder>
+    </media>
+
+    <administration>
+        <menu>Previsão do tempo</menu>
+        <submenu>
+			<menu link="option=com_previsaodotempo&amp;view=previsoes" view="previsoes" alt="Previsaodotempo/Previsoes">Previsão do temoi</menu>
+            <menu link="option=com_previsaodotempo&amp;view=mesorregioes" view="mesorregioes" alt="Previsaodotempo/Mesorregioes">Mesorregião</menu>
+            <menu link="option=com_previsaodotempo&amp;view=variaveis" view="variaveis" alt="Previsaodotempo/variaveis">Variaveis</menu>
+            <menu link="option=com_previsaodotempo&amp;view=icones" view="icones" alt="Previsaodotempo/icones">Icones</menu>
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>previsaodotempo.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="administrator/languages">
+			<language tag="en-GB">en-GB/en-GB.com_previsaodotempo.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_previsaodotempo.sys.ini</language>
+			<language tag="pt-BR">pt-BR/pt-BR.com_previsaodotempo.ini</language>
+			<language tag="pt-BR">pt-BR/pt-BR.com_previsaodotempo.sys.ini</language>
+        </languages>
+    </administration>
+    <config>
+        <fields name="params">
+            <fieldset name="component">
+                <field name="save_history" default="0" />
+            </fieldset>
+        </fields>
+    </config>
+    <plugins>
+        <plugin group="search" plugin="previsaodotempo"/>
+    </plugins>
+    
+</extension>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+	>
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			validate="rules"
+			filter="rules"
+			component="com_avisohidrologico"
+			section="component"
+		/>
+	</fieldset>
+	<fieldset name="configuracoes"
+		label="Configurações"
+		description="Parâmetros de Configuração do componente">
+		<field name="max_upload_attempts" type="number" default="0" label="Número máximo de uploads por edição:" description="" min="0" max="10" step="1" />
+	</fieldset>
+</config>

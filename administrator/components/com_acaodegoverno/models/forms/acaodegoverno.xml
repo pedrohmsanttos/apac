@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+		<field
+				name="id"
+				type="hidden"
+				/>
+		<field
+				name="published"
+				type="hidden"
+				default="1"
+				/>
+		<field
+			name="titulo"
+			type="text"
+			label="Título"
+			description=""
+			size="40"
+			class="inputbox"
+			default=""
+			/>
+
+		<field  
+			name="imagem" 
+			label="Ícone"
+			type="media"
+			preview_width="310"
+			preview_height="250"
+			directory="icons" 
+			/>
+
+		<field 
+		   name="conteudo" 
+		   label ="Conteúdo"
+		   type="editor"
+		   rows="10"
+		   editor="TinyMCE"
+		   buttons="true"
+		   width="350"
+		   height="10"
+		   hide="image"
+		   filter="safehtml"
+		   class="inputbox"
+		   description="" />
+   				
+		<field 
+			name="link_detalhamentoacao" 
+			type="modal_article" 
+			default="" 
+			label="Selecione um artigo" 
+			description="" />
+				
+	</fieldset>
+</form>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+			<field
+				name="id"
+				type="hidden"
+				/>
+
+				<field
+					class="btn-group btn-group-yesno"
+					name="published"
+					type="radio"
+					default="1"
+					label="Publicado"
+					description="">
+
+					<option value="0">Não</option>
+					<option value="1">Sim</option>
+				</field>
+
+				<field
+						name="titulo"
+						type="text"
+						label="Título"
+						description=""
+						size="40"
+						required="true"
+						class="inputbox"
+						default=""
+						/>
+
+				<field
+						name="descricao"
+						type="textarea"
+						label="Descrição:"
+						description=""
+						size="40"
+						required="true"
+						class="inputbox"
+						default=""
+						/>
+
+				<field size="2" name="formato" required="true" type="list" label="Formato:" description="Formato do arquivo">
+					<option>Selecione</option>
+					<option value="1">Audio</option>
+					<option value="2">Video</option>
+					<option value="3">Imagem</option>
+					<option value="4">Documento</option>
+					<option value="5">Link</option>
+				</field>
+
+				<field
+						name="arquivo"
+						type="media"
+						class="inputbox"
+						label="Arquivo:"
+						directory="mysites"
+					  />
+
+				<field
+						name="link"
+						type="text"
+						label="Link"
+						description=""
+						size="500"
+						class="inputbox"
+						default=""
+						/>
+
+				<field
+					class="btn-group btn-group-yesno"
+					name="linkonly"
+					type="radio"
+					default="0"
+					label="Apenas link:"
+					description="">
+					<option value="0">Não</option>
+					<option value="1">Sim</option>
+				</field>
+
+				<!-- <field
+					name="catid"
+					required="true"
+					type="category"
+					extension="com_arquivo"
+					label="Categoria:"
+					description="" /> -->
+
+					<field
+						name="catid"
+						type="category"
+						required="true"
+						extension="com_arquivo"
+						label="Categoria:"
+						description=""
+						published="1"
+						>
+					<option value="">- Selecione -</option>
+				</field>
+
+	</fieldset>
+</form>

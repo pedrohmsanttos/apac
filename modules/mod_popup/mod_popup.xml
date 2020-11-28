@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Exibição de POP-UP</name>
+    <author>Inhalt Soluções Em Informática</author>
+    <version>1.0.0</version>
+    <description>Módulo de exibição de Pop-up.</description>
+    <files>
+        <filename>mod_popup.xml</filename>
+        <filename module="mod_popup">mod_popup.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/tingle.min.css</filename>
+        <filename>tmpl/tingle.min.js</filename>
+    </files>
+    <config>
+    <fields name="params">
+        <fieldset name="basic">
+
+            <field name="altura"
+              type="number"
+              default="0"
+              label="Altura(%)"
+              description=""
+              min="0"
+              max="100"
+              step="1" />
+
+            <field name="largura"
+              type="number"
+              default="0"
+              label="Largura(%)"
+              description=""
+              min="0"
+              max="100"
+              step="1" />
+
+            <field name="data_fim"
+              type="calendar"
+              label="Data:"
+            	class="input-small"
+              required="true"
+            	showtime="false"
+              translateformat="true" />
+
+              <field name="tempo_indeterminado"
+                type="radio"
+                default="0"
+                class="btn-group btn-group-yesno radio"
+                label="Por tempo indeterminado"
+                description="">
+                  <option value="0">Não</option>
+                  <option value="1">Sim</option>
+              </field>
+
+            <field name="html" type="editor" label="Conteúdo" description="Conteúdo do popup pode ser um texto ou imagem" width="300" filter="safehtml" />
+        </fieldset>
+    </fields>
+</config>
+</extension>

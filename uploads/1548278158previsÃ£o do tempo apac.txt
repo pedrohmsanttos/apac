@@ -1,0 +1,9 @@
+j27a9_previsao_tempo(titulo, tipo[mesorregiao, municipio] , dados_id, previsoes, oredem, pagina_previsao)
+
+j27a9_previsao_tempo_dados(tipo, data, hora(hoje 9hs, home 18hs, amanhã), icone, legenda, observacao, temperatura_mim, temperatura_max, umidade_min, umidade_max, tipo_chuva, distribuicao_chuva, intensidade_chuva, intesidade_vento, rota_vento, nebulosidade, periodo, data_criacao, usuario_author, data_publicacao)
+
+j27a9_previsao_tempo_tendencia(titulo ,descricao, tendencia_id, oredem, servico, frequencia, observacoe_id)
+
+j27a9_previsao_tempo_tendencia_dados(mesorregiao_id, mes, valor, legenda)
+
+j27a9_previsao_tempo_tendencia_observacao(mesorregiao_id, mes, ano, valor)

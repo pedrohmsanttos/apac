@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Bloco de Arquivos</name>
+    <author>Inhalt Soluções Em Informática</author>
+    <creationDate>Novembro 2017</creationDate>
+    <version>1.0.0</version>
+    <description>Módulo para exibição de Blocos de Arquivos Diversos oriundos do componente de aquivos</description>
+    <files>
+        <filename>mod_bloco.xml</filename>
+        <filename module="mod_bloco">mod_bloco.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+        <filename>tmpl/index.html</filename>
+        <filename>tmpl/default.php</filename>
+    </files>
+    <config>
+        <fields name="params" >
+            <fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+
+                <field
+                     type="spacer"
+                     name="myspacer1"
+                     hr="true"
+                />
+
+                <field
+                    name="titulo_1"
+                    type="text"
+                    required="true"
+                    label="Título:"
+                    filter="string"
+                />
+
+                <field
+                    name="categoria_1"
+                    type="category"
+                    required="true"
+                    extension="com_arquivo"
+                    label="Categoria 1:"
+                    description=""
+                />
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>

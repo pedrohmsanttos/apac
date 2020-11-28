@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site" method="upgrade">
+	<name>GovPE</name><!-- name the template -->
+	<creationDate>2017-04-18</creationDate><!-- the date your are beginn to code -->
+	<author>Aloisio Soares</author><!-- your name (oops, I repeat myself) -->
+	<copyright>2017 Inhalt Soluções em Informática. Todos os direitos reservados.</copyright><!-- for who you are coding -->
+	<authorEmail>aloisio.soares@inhalt.com.br</authorEmail><!-- your email address -->
+	<authorUrl>http://www.inhalt.com.br</authorUrl><!-- your url -->
+	<version>1.0.0</version><!-- give your template a number -->
+	<description><![CDATA[
+		<h1>GovPE</h1>
+		<p>Desenvolvido pela <a href="http://www.inhalt.com.br" target="_blank">Inhalt Soluções em Informática</a>.</p>
+	]]></description><!-- change the description as you like -->
+
+	<files><!-- no need to change -->
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.php</filename>
+		<filename>logic.php</filename>
+		<filename>offline.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+
+	<positions><!-- define the positions for modules here -->
+		<position>debug</position>
+		<position>header</position>
+		<position>side-menu</position>
+		<position>top-menu</position>
+		<position>aux-menu</position>
+		<position>search-bar</position>
+		<position>topfooter</position>
+		<position>footer</position>
+		<position>logo</position>
+		<position>content-area</position>
+		<position>right-sidebar</position>
+		<position>informes</position>
+	</positions>
+
+	<config>
+	<fields name="params">
+			<fieldset name="basic">
+				<field class="btn-group btn-group-yesno" name="mostrar_barra_governo" type="radio" default="0" label="Mostrar barra governo" description="">
+					<option value="0">Não</option>
+					<option value="1">Sim</option>
+				</field>
+			</fieldset>
+	</fields>
+</config>
+
+</extension>

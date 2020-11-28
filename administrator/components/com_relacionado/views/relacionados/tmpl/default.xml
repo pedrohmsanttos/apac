@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Relacionados">
+		<message>Relacionado</message>
+	</layout>
+	<fields name="request"
+			addfieldpath="/administrator/components/com_relacionado/models/fields">
+		<fieldset name="request">
+			<field
+					name="id"
+					type="relacionado"
+					label="Relacionado"
+					description="Relacionado"
+					/>		
+		</fieldset>
+	</fields>
+</metadata>

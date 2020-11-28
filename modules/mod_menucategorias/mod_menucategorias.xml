@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Menu Categorias</name>
+    <author>Inhalt Soluções Em Informática</author>
+    <version>1.0.0</version>
+    <description>Módulo para exibição do menu lateral de categorias.</description>
+    <files>
+        <filename>mod_menucategorias.xml</filename>
+        <filename module="mod_menucategorias">mod_menucategorias.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+    <fields name="params">
+        <fieldset name="basic">
+
+            <field name="categoria_noticia" type="category" extension="com_content" label="Selecione a categoria da noticia" description="" />
+
+        </fieldset>
+    </fields>
+</config>
+</extension>

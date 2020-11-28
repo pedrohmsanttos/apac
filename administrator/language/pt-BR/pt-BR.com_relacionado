@@ -1,0 +1,32 @@
+; Joomla! Project
+; Copyright (C) 2005 - 2015 Open Source Matters. All rights reserved.
+; License GNU General Public License version 2 or later; see LICENSE.txt, see LICENSE.php
+; Note : All ini files need to be saved as UTF-8
+ 
+COM_RELACIONADO_ADMINISTRATION="Relacionado - Administração"
+ 
+COM_RELACIONADO_NUM="#"
+COM_RELACIONADOS_FILTER="Filtros"
+COM_RELACIONADO_PUBLISHED="Publicado"
+COM_RELACIONADOS_NAME="Nome"
+COM_RELACIONADO_ID="Id"
+ 
+COM_RELACIONADO_CREATING="Relacionado - Incluir"
+COM_RELACIONADO_DETAILS="Detalhes"
+COM_RELACIONADO_EDITING="Relacionado - Editar"
+COM_RELACIONADO_FIELD_GREETING_DESC="Esta arquivo será exibido"
+COM_RELACIONADO_FIELD_GREETING_LABEL="Relacionado"
+COM_RELACIONADO_HEADING_GREETING="Relacionado"
+COM_RELACIONADO_HEADING_ID="Id"
+COM_RELACIONADO_MANAGER_EDIT="Configuração Relacionado : Editar Relacionado"
+COM_RELACIONADO_MANAGER_NEW="Configuração Relacionado : Novo Relacionado"
+COM_RELACIONADO_MANAGER_RelacionadoS="Configuração Relacionado"
+COM_RELACIONADO_EDIT_Relacionado="Editar arquivo"
+COM_RELACIONADO_N_ITEMS_DELETED_1="Um arquivo excluído"
+COM_RELACIONADO_N_ITEMS_DELETED_MORE="%d arquivos deletados"
+COM_RELACIONADO_N_ITEMS_PUBLISHED="%d arquivo(s) publicados"
+COM_RELACIONADO_N_ITEMS_UNPUBLISHED="%d arquivo(s) despublicados"
+COM_RELACIONADO_GREETING_LABEL="Relacionados"
+COM_RELACIONADO_GREETING_DESC="Add Hello World Greeting"
+
+COM_RELACIONADO_N_ITEMS_DELETED="%d arquivos deletados"

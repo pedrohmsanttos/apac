@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="administrator" method="upgrade">
+    <name>mod_capitalize</name>
+    <author>Inhalt</author>
+    <creationDate>Jun 2017</creationDate>
+    <copyright>Copyright (C) 2017 Inhalt Sol. em Informática</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>contato@inhalt.com.br</authorEmail>
+    <authorUrl>www.inhalt.com.br</authorUrl>
+    <version>1.1.0</version>
+    <description>Capitalize e disable do Menu</description>
+    <files>
+        <filename module="mod_capitalize">mod_capitalize.php</filename>
+    </files>
+</extension>

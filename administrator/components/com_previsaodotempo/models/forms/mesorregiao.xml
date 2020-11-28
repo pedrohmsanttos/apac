@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field
+      class="btn-group btn-group-yesno"
+      name="state"
+      type="radio"
+      default="0"
+      label="Publicado:"
+      description="">
+
+      <option value="0">Não</option>
+      <option value="1">Sim</option>
+		</field>
+
+    <field 
+      name="nome" 
+      filter="safehtml" 
+      type="text" 
+      label="Nome:" 
+      description="Informar o nome da mesorregião"
+      required="true"
+    />
+
+    <field 
+      name="descricao" 
+      filter="safehtml" 
+      type="textarea" 
+      label="Descrição:" 
+      description="Campo com a descrição da mesorregião"
+    />
+
+    <field 
+      name="geojson" 
+      filter="safehtml" 
+      type="file" 
+      label="GeoJSON:" 
+      required="true"
+      accept="application/geo+json|application/json"
+      description="Campo que armazenará o GeoJSON da mesorregião para ser utilizado na exibição do mapa no Front-End"
+    />
+    
+    <field 
+      name="checked_out" 
+      type="hidden" 
+      filter="unset"
+    />
+    
+    <field 
+      name="checked_out_time" 
+      default="0000-00-00 00:00:00" 
+      type="hidden" 
+      filter="unset"
+    /> 
+
+    <field 
+      name="created_by" 
+      type="createdby" 
+      default="0" 
+      label="COM_PREVISAODOTEMPO_FORM_LBL_PREVISAO_CREATED_BY" 
+      description="COM_PREVISAODOTEMPO_FORM_DESC_PREVISAO_CREATED_BY" 
+      hidden="true" 
+      hint="COM_PREVISAODOTEMPO_FORM_LBL_PREVISAO_CREATED_BY"
+    />
+    
+    <field 
+      name="modified_by" 
+      type="modifiedby" 
+      default="0" 
+      label="COM_PREVISAODOTEMPO_FORM_LBL_PREVISAO_MODIFIED_BY" 
+      description="COM_PREVISAODOTEMPO_FORM_DESC_PREVISAO_MODIFIED_BY" 
+      hidden="true" 
+      hint="COM_PREVISAODOTEMPO_FORM_LBL_PREVISAO_MODIFIED_BY"
+    />
+
+    <field
+				name="id"
+				type="hidden"
+				/>
+ </fieldset>
+
+</form>

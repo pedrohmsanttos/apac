@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Exibição de ítens relacionados</name>
+    <author>Inhalt Soluções Em Informática</author>
+    <version>1.0.0</version>
+    <description>Módulo para da Listagem de ítens relacionados.</description>
+    <files>
+        <filename>mod_itensrelacionados.xml</filename>
+        <filename module="mod_itensrelacionados">mod_itensrelacionados.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>tmpl/default.php</filename>
+    </files>
+    <config>
+    <fields name="params">
+        <fieldset name="basic">
+
+          <!-- <field name="categoria"
+                 type="category"
+                 extension="com_arquivo"
+                 label="Categoria:"
+                 description="" /> -->
+
+           <field
+ 					    name="categoria"
+ 					    type="sql"
+ 					    default=""
+ 					    label="Categoria:"
+ 					    query="SELECT id, concat( title, ' (', extension, ')') AS title FROM #__categories WHERE extension = 'com_arquivo' OR extension = 'com_aviso' OR extension = 'com_content'"
+ 					    key_field="id"
+ 					    value_field="title"
+ 					    required="true"
+ 					    >
+ 					    <option value="">Selecione uma Categoria</option>
+ 					</field>
+
+           <field size="2"
+                  name="tipo"
+                  required="true"
+                  type="list"
+                  label="Tipo:"
+                  >
+   					<option>Selecione</option>
+   					<option value="1">Avisos</option>
+   					<option value="2">Informes</option>
+   					<option value="3">Notícias</option>
+   					<option value="4">Licitações</option>
+   					<option value="5">Arquivos</option>
+   				</field>
+
+          <field name="limite"
+                 type="number"
+                 default="0"
+                 label="Limite:"
+                 description="Escolha a quantidade máxima de ítens para serem exibidos."
+                 min="0"
+                 max="10"
+                 step="1" />
+
+        </fieldset>
+    </fields>
+</config>
+</extension>

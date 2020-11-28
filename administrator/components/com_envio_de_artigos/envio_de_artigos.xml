@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_envio_de_artigos</name>
+    <creationDate>2019-06-04</creationDate>
+    <copyright>Copyright (C) 2018. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Matheus Felipe</author>
+    <authorEmail>matheus.felipe@inhalt.com.br</authorEmail>
+    <authorUrl>https://www.developer-url.com</authorUrl>
+    <version>1.0.0</version>
+    <description>Envio de Artigos por e-mail.</description>
+    
+    <!-- Runs on install -->
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+            <file driver="postgresql" charset="utf8">sql/install.postgresql.utf8.sql</file>
+        </sql>
+    </install>
+    
+    <!-- Runs on uninstall -->
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+            <file driver="postgresql" charset="utf8">sql/uninstall.postgresql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <languages folder="site">
+        <language tag="en-GB">language/en-GB/en-GB.com_envio_de_artigos.ini</language>
+		<language tag="pt-BR">language/pt-BR/pt-BR.com_envio_de_artigos.ini</language>
+    </languages>
+    <administration>
+        <menu img="components/com_envio_de_artigos/assets/images/main-16x16-envio_de_artigos.png">COM_ENVIO_DE_ARTIGOS</menu>
+        <submenu>
+            <menu link="option=com_envio_de_artigos&amp;view=artigos" view="artigos" img="components/com_envio_de_artigos/assets/images/view-16x16-artigos.png" alt="Envio_de_artigos/Artigos">COM_ENVIO_DE_ARTIGOS_TITLE_ARTIGOS</menu>
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>envio_de_artigos.php</filename>
+            <folder>assets</folder>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="administrator">
+            <language tag="en-GB">language/en-GB/en-GB.com_envio_de_artigos.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_envio_de_artigos.sys.ini</language>
+			<language tag="pt-BR">language/pt-BR/pt-BR.com_envio_de_artigos.ini</language>
+			<language tag="pt-BR">language/pt-BR/pt-BR.com_envio_de_artigos.sys.ini</language>
+        </languages>
+    </administration>
+    <!-- Generated with the ComponentGenerator.com -->
+</extension>

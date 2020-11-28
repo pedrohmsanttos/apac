@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" client="site" method="upgrade">
+	<name>Cadastro de interessados no site</name>
+	<author>Lerisson Freitas</author>
+	<creationDate>28/05/2019</creationDate>
+	<authorEmail>contato@inhalt.com.br</authorEmail>
+	<authorUrl>http://inhalt.com.br</authorUrl>
+	<version>1.0.0</version>
+	<description>Cadastro de interessados no site</description>
+	<files>
+		<filename component="com_interessadonosite">interessadonosite.php</filename>
+		<filename>interessadonosite_view.php</filename>
+		<filename>interessadonosite.xml</filename>
+		<filename>index.html</filename>
+	</files>
+	
+</extension>

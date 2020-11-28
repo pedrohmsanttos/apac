@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+				name="id"
+				type="hidden"
+				/>
+		<field
+				name="titulo"
+				type="text"
+				label="Título"
+				description=""
+				size="40"
+				class="inputbox"
+				default=""
+				/>
+		<field
+				name="subtitulo"
+				type="text"
+				label="Subtítulo"
+				description=""
+				size="40"
+				class="inputbox"
+				default=""
+				/>
+		<field 
+		   name="conteudo" 
+		   label ="Conteúdo"
+		   type="editor"
+		   editor="TinyMCE"
+		   buttons="true"
+		   width="250"
+		   height="50"
+		   hide="image"
+		   filter="safehtml"
+		   class="inputbox"
+		   description="" />
+   				
+		<field
+				name="link_maisinfo"
+				type="text"
+				label="Link Mais Informações"
+				description=""
+				size="40"
+				class="inputbox"
+				default="http://"
+				/>
+
+		<field 
+			   name="catid" 
+			   type="category" 
+			   extension="com_servico" 
+			   label="Selecione a categoria" 
+			   description="" />
+				
+	</fieldset>
+</form>

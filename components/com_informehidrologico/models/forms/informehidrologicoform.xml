@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="ordering"/>
+    <field name="state" default="1" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+      <option value="2">JARCHIVED</option>
+      <option value="-2">JTRASHED</option>
+    </field>
+    <field name="checked_out" type="hidden" filter="unset"/>
+    <field name="checked_out_time" default="0000-00-00 00:00:00" type="hidden" filter="unset"/>
+    <field name="titulo" filter="safehtml" type="text" label="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_TITULO" description="COM_INFORMEHIDROLOGICO_FORM_DESC_INFORMEHIDROLOGICO_TITULO" hint="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_TITULO"/>
+    <field name="tipo" extension="com_informehidrologico.informehidrologicos" type="category" label="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_TIPO" description="COM_INFORMEHIDROLOGICO_FORM_DESC_INFORMEHIDROLOGICO_TIPO" hint="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_TIPO"/>
+    <field name="observacao" filter="safehtml" type="textarea" label="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_OBSERVACAO" description="COM_INFORMEHIDROLOGICO_FORM_DESC_INFORMEHIDROLOGICO_OBSERVACAO" hint="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_OBSERVACAO"/>
+    <field name="tags" filter="safehtml" type="text" label="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_TAGS" description="COM_INFORMEHIDROLOGICO_FORM_DESC_INFORMEHIDROLOGICO_TAGS" hint="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_TAGS"/>
+    <field name="arquivo" type="FileMultiple" label="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_ARQUIVO" description="COM_INFORMEHIDROLOGICO_FORM_DESC_INFORMEHIDROLOGICO_ARQUIVO" hint="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_ARQUIVO"/>
+    <field name="publicacao" default="0000-00-00 00:00:00" label="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_PUBLICACAO" description="COM_INFORMEHIDROLOGICO_FORM_DESC_INFORMEHIDROLOGICO_PUBLICACAO" hint="COM_INFORMEHIDROLOGICO_FORM_LBL_INFORMEHIDROLOGICO_PUBLICACAO"/>
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+</form>

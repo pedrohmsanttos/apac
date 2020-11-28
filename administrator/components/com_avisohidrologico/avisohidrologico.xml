@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.2.0" method="upgrade">
+	<name>avisohidrologico</name>
+	<creationDate>December 2017</creationDate>
+	<author>Inhalt Soluções em Informática</author>
+	<authorEmail>suporte@inhalt.com.br</authorEmail>
+	<authorUrl>http://inhalt.com.br/</authorUrl>
+	<copyright>Copyright 2017</copyright>
+	<license></license>
+	<version>0.1.0</version>
+	<description>Componente de Avisos Hidrológicos</description>
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>avisohidrologico.php</filename>
+		<filename>controller.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+	</files>
+	<administration>
+		<menu link='index.php?option=com_avisohidrologico'>Cadastro de Avisos Hidrológicos</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>avisohidrologico.php</filename>
+			<filename>avisohidrologico.xml</filename>
+			<filename>controller.php</filename>
+			<folder>sql</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>tables</folder>
+			<folder>controllers</folder>
+			<folder>language</folder>
+		</files>
+	</administration>
+</extension>

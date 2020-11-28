@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Menu de destaque Lateral</name>
+    <author>Inhalt Soluções Em Informática</author>
+    <creationDate>2017-05-02</creationDate>
+    <version>1.0.0</version>
+    <description>Módulo para exibição do menu de destaque lateral.</description>
+    <files>
+        <filename>mod_menudestaque.xml</filename>
+        <filename module="mod_menudestaque">mod_menudestaque.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+</extension>

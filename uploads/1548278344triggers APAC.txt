@@ -1,0 +1,17 @@
+CREATE OR REPLACE FUNCTION data_update_previsao() RETURNS Trigger AS
+$BODY$
+  BEGIN
+    IF (TG_OP = 'INSERT') THEN
+      NEW.checked_out_time = now();
+      RETURN NEW;
+    END IF;
+    NEW.checked_update_time = now();
+      RETURN NEW;
+    RETURN NULL; -- Para não da erro
+  END;
+$BODY$
+LANGUAGE plpgsql;
+
+CREATE TRIGGER "j27a9_previsaodotempo_data"
+BEFORE INSERT OR UPDATE ON "j27a9_previsaodotempo_previsao"
+  FOR EACH ROW EXECUTE PROCEDURE data_update_previsao();

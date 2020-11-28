@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Acessibilidade</name>
+    <author>Inhalt Soluções Em Informática</author>
+    <version>2.0.0</version>
+    <description>Módulo para exibição de acessiblidade.</description>
+    <files>
+        <filename>mod_acessibilidade.xml</filename>
+        <filename module="mod_acessibilidade">mod_acessibilidade.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+    <fields name="params">
+        <fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+            <field label="Selecione o artigo de acessiblidade:"
+                   required="true"
+                   type="modal_article"
+                   name="article" />
+            <field label="Selecione o artigo de mapa do site:"
+                   required="true"
+                   type="modal_article"
+                   name="article_map" />
+        </fieldset>
+    </fields>
+</config>
+</extension>

@@ -1,0 +1,51 @@
+
+
+<table id="tblSample" name="tblSample" class="tree table table-striped">
+   <tbody>
+      <tr>
+         <th>Título</th>
+         <th>Data</th>
+         <th>Usuário</th>
+         <th>Arquivo</th>
+         <th>Ação</th>
+      </tr>
+      <tr class="treegrid-1 expanded">
+         <td>
+            <div class="treegrid-container" style="margin-left: 24px;"><span class="treegrid-expander treegrid-expander-expanded"></span><input name="jform[titulos][]" value="" type="text"><input name="jform[parent_id][]" value="1" type="hidden"></div>
+         </td>
+         <td>23/03/2018 15:03</td>
+         <td>aloisio.soares</td>
+         <td><input name="jform[arquivo][]" value="" type="file"></td>
+         <td> <input class="btn btn-small button-new btn-danger" id="btnDelete" value="- Remover" onclick="removeLinha('treegrid-1')" type="button"> <input class="btn btn-small button-new btn-success adicionaLinhaFilha" value="+ Linha" onclick="adicionaLinhaFilha('treegrid-1')" data-pai="1" type="button"> </td>
+      </tr>
+      <tr class="treegrid-2 treegrid-parent-treegrid-1 treegrid-parent-1 expanded" style="display: table-row;">
+         <td>
+            <div class="treegrid-container" style="margin-left: 48px;"><span class="treegrid-expander treegrid-expander-expanded"></span><input name="jform[titulos][]" value="" type="text"><input name="jform[parent_id][]" value="1" type="hidden"></div>
+         </td>
+         <td>23/03/2018 15:03</td>
+         <td>aloisio.soares</td>
+         <td><input name="jform[arquivo][]" value="" type="file"></td>
+         <td> <input class="btn btn-small button-new btn-danger" id="btnDelete" value="- Remover" onclick="removeLinha('treegrid-2')" type="button"> <input class="btn btn-small button-new btn-success adicionaLinhaFilha" value="+ Linha" onclick="adicionaLinhaFilha('treegrid-2')" data-pai="1" type="button"> </td>
+      </tr>
+      <tr class="treegrid-3 treegrid-parent-treegrid-2 treegrid-parent-2" style="display: table-row;">
+         <td>
+            <div class="treegrid-container" style="margin-left: 72px;"><span class="treegrid-expander"></span><input name="jform[titulos][]" value="" type="text"><input name="jform[parent_id][]" value="2" type="hidden"></div>
+         </td>
+         <td>23/03/2018 15:03</td>
+         <td>aloisio.soares</td>
+         <td><input name="jform[arquivo][]" value="" type="file"></td>
+         <td> <input class="btn btn-small button-new btn-danger" id="btnDelete" value="- Remover" onclick="removeLinha('treegrid-3')" type="button"> <input class="btn btn-small button-new btn-success adicionaLinhaFilha" value="+ Linha" onclick="adicionaLinhaFilha('treegrid-3')" data-pai="1" type="button"> </td>
+      </tr>
+   </tbody>
+</table>
+
+ <tr class="treegrid-<?php echo $anexo->id?> <?php echo ($anexo->parent_id != 1) ? 'treegrid-parent-'.$anexo->parent_id : ''; ?>">
+                                                <td>
+                                                    <input name="jform[titulos][]" value="<?php echo $anexo->titulo?>" type="text">
+                                                    <input name="jform[parent_id][]" value="<?php echo $anexo->parent_id?>" type="hidden">
+                                                </td>
+                                                <td><?php echo preparaData($anexo->created)?></td>
+                                                <td><?php echo getUsernameById($anexo->id_user)?></td>
+                                                <td><input name="jform[arquivo][]" value="<?php echo $anexo->arquivo?>" type="file">(<?php echo $anexo->arquivo; ?>)</td>
+                                                <td> <input class="btn btn-small button-new btn-danger" id="btnDelete" value="- Remover" onclick="removeLinha('treegrid-<?php echo $anexo->id?>')" type="button"> <input class="btn btn-small button-new btn-success adicionaLinhaFilha" value="+ Linha" onclick="adicionaLinhaFilha('treegrid-<?php echo $anexo->id?>')" type="button"></td>
+                                            </tr>

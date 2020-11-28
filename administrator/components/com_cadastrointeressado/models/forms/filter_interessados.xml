@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" type="text" hint="COM_CADASTROINTERESSADO_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        <field name="state"
+               type="status"
+               label="COM_CADASTROINTERESSADO_FILTER_STATE"
+               description="COM_CADASTROINTERESSADO_FILTER_STATE_DESC"
+               onchange="this.form.submit();"
+        >
+        
+            <option value="">JOPTION_SELECT_PUBLISHED</option>
+        </field>
+
+         <field name="boletins"
+               type="list"
+               label="Boletins"
+               description="Boletins"
+               onchange="this.form.submit();"
+               default=""
+        >
+            <option value="">- Selecionar Boletim -</option>
+            <option value="avisosM">Avisos Meteorológicos</option>
+            <option value="avisosH">Avisos Hidrológicos</option>
+            <option value="informesM">Informes Meteorológicos</option>
+            <option value="informesH">Informes Hidrológicos</option>
+            <option value="noticia">Notícias</option>
+            <option value="licitacao">Licitações</option>
+            <option value="previsao">Previsão do Tempo</option>
+            <option value="all">Todos</option>
+        </field>
+
+        <field name="situacao"
+               type="list"
+               label="Situacao"
+               description="Situação"
+               onchange="this.form.submit();"
+               default=""
+        >
+            <option value="">- Selecionar Situação -</option>
+            <option value="ativo">Ativo</option>
+            <option value="inativo">Inativo</option>
+            <option value="all">Todos</option>
+        </field>
+         <field name="pertencegoverno"
+               type="list"
+               label="pertencegoverno"
+               description="Pertence ao Governo"
+               onchange="this.form.submit();"
+               default=""
+        >
+            <option value="">- Selecionar Pertence ao Governo -</option>
+            <option value="s">Sim</option>
+            <option value="n">Não</option>
+        </field>
+    </fields>
+
+    <fields name="list">
+
+       
+
+        <field name="limit"
+               type="limitbox"
+               class="input-mini"
+               default="25"
+               onchange="this.form.submit();"
+        />
+
+    </fields>
+
+</form>

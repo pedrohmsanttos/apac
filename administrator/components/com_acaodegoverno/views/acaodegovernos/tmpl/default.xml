@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Ação de Governo">
+		<message>Ação de Governo</message>
+	</layout>
+	<fields name="request"
+			addfieldpath="/administrator/components/com_acaodegoverno/models/fields">
+		<fieldset name="request">
+			<field
+					name="id"
+					type="acaogoverno"
+					label="Ações de Governo"
+					description="Ações de Governo"
+					/>		
+			</fieldset>
+	</fields>
+</metadata>

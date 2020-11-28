@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field 
+    name="id" 
+    type="text" 
+    readonly="true" 
+    class="readonly" 
+    default="0" 
+    description="JGLOBAL_FIELD_ID_DESC"/>
+
+    <field name="nome" 
+    filter="safehtml" 
+    type="text" 
+    required="true" 
+    label="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_NOME" 
+    description="COM_CADASTROINTERESSADO_FORM_DESC_INTERESSADO_NOME" 
+    hint="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_NOME"/>
+
+    <field 
+    name="email" 
+    validate="email" 
+    type="email" 
+    required="true" 
+    label="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_EMAIL" 
+    description="COM_CADASTROINTERESSADO_FORM_DESC_INTERESSADO_EMAIL" 
+    hint="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_EMAIL"/>
+
+    <field 
+    name="observacao" 
+    type="textarea" 
+    label="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_OBSERVACAO" 
+    description="COM_CADASTROINTERESSADO_FORM_DESC_INTERESSADO_OBSERVACAO" 
+    hint="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_OBSERVACAO"/>
+
+    <field
+      name="situacao" 
+      type="radio" 
+      label="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_SITUACAO" 
+      description="COM_CADASTROINTERESSADO_FORM_DESC_INTERESSADO_SITUACAO" 
+      hint="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_SITUACAO"
+      class="btn-group btn-group-yesno"
+      default="1">
+			<option value="1">Ativo</option>
+			<option value="0">Inativo</option>
+    </field>
+
+    <field 
+      name="pertencegoverno" 
+      type="radio" 
+      label="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_PERTENCEGOVERNO" 
+      description="COM_CADASTROINTERESSADO_FORM_DESC_INTERESSADO_PERTENCEGOVERNO" 
+      hint="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_PERTENCEGOVERNO"
+      class="btn-group btn-group-yesno"
+      default="0">
+      <option value="1">Sim</option>
+			<option value="0">Não</option>
+    </field>
+    <field name="meteoroligia_informes" filter="safehtml" type="text" label="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_METEOROLIGIA_INFORMES" description="COM_CADASTROINTERESSADO_FORM_DESC_INTERESSADO_METEOROLIGIA_INFORMES" hint="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_METEOROLIGIA_INFORMES"/>
+    
+    <field name="state" default="1" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+      <option value="2">JARCHIVED</option>
+      <option value="-2">JTRASHED</option>
+    </field>
+
+    <field 
+      name="noticias" 
+      type="radio" 
+      label="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_NOTICIAS" 
+      description="COM_CADASTROINTERESSADO_FORM_DESC_INTERESSADO_NOTICIAS" 
+      hint="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_NOTICIAS"
+      class="btn-group btn-group-yesno"
+      default="0">
+      <option value="1">Sim</option>
+			<option value="0">Não</option>
+    </field>
+
+    <field 
+      name="licitacoes"
+      type="radio" 
+      label="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_LICITACOES" 
+      description="COM_CADASTROINTERESSADO_FORM_DESC_INTERESSADO_LICITACOES" 
+      hint="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_LICITACOES"
+      class="btn-group btn-group-yesno"
+      default="0">
+      <option value="1">Sim</option>
+			<option value="0">Não</option>
+    </field>
+
+    <field 
+      name="confidencial" 
+      type="radio" 
+      label="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_CONFIDENCIAL" 
+      description="COM_CADASTROINTERESSADO_FORM_DESC_INTERESSADO_CONFIDENCIAL" 
+      hint="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_CONFIDENCIAL"
+      class="btn-group btn-group-yesno"
+      default="0">
+      <option value="1">Sim</option>
+			<option value="0">Não</option>
+    </field>
+
+    <field
+			name="previsao_tempo"
+			type="radio"
+			label="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_PREVISAO_TEMPO"
+			description="COM_CADASTROINTERESSADO_FORM_DESC_INTERESSADO_PREVISAO_TEMPO"
+      hint="COM_CADASTROINTERESSADO_FORM_LBL_PREVISAO_TEMPO"
+			default="0"
+			class="btn-group btn-group-yesno">
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</field>
+
+    <field name="ordering"/>
+    <field name="checked_out" type="hidden" filter="unset"/>
+    <field name="checked_out_time" default="0000-00-00 00:00:00" type="hidden" filter="unset"/>
+    <field name="created_by" type="createdby" default="0" label="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_CREATED_BY" description="COM_CADASTROINTERESSADO_FORM_DESC_INTERESSADO_CREATED_BY" hidden="true" hint="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_CREATED_BY"/>
+    
+    <field name="meteorologia_avisos" filter="safehtml" type="text" label="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_METEOROLIGIA_AVISOS" description="COM_CADASTROINTERESSADO_FORM_DESC_INTERESSADO_METEOROLIGIA_AVISOS" hint="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_METEOROLIGIA_AVISOS"/>
+    
+    <field name="modified_by" type="modifiedby" default="0" label="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_MODIFIED_BY" description="COM_CADASTROINTERESSADO_FORM_DESC_INTERESSADO_MODIFIED_BY" hidden="true" hint="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_MODIFIED_BY"/>
+    
+    <field name="hidrologia_avisos" filter="safehtml" type="text" label="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_HIDROLOGIA_AVISOS" description="COM_CADASTROINTERESSADO_FORM_DESC_INTERESSADO_HIDROLOGIA_AVISOS" hint="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_HIDROLOGIA_AVISOS"/>
+    <field name="hidrologia_informes" filter="safehtml" type="text" label="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_HIDROLOGIA_INFORMES" description="COM_CADASTROINTERESSADO_FORM_DESC_INTERESSADO_HIDROLOGIA_INFORMES" hint="COM_CADASTROINTERESSADO_FORM_LBL_INTERESSADO_HIDROLOGIA_INFORMES"/>
+    
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+</form>

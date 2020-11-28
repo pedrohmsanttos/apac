@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Exibição de Destaque</name>
+    <author>Inhalt Soluções Em Informática</author>
+    <version>1.0.0</version>
+    <description>Módulo para exibição de destaque.</description>
+    <files>
+        <filename>mod_bannerdestaque.xml</filename>
+        <filename module="mod_bannerdestaque">mod_bannerdestaque.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+    <fields name="params">
+        <fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+            <field label="Selecione o artigo"
+                   required="true"
+                   type="modal_article"
+                   name="big_banner_article" />
+
+            <field name="big_banner_description" 
+                   type="textarea" 
+                   label="Descrição:" 
+                   description="" 
+                   size="250" 
+                   rows="5"
+                   filter="string" />
+
+            <field name="big_banner_image" 
+                   type="media" 
+                   label="Imagem (580px × 380px):" 
+                   directory="stories" 
+                   width="500"
+                   preview="true" /> 
+            
+            <field type="spacer" 
+                   name="myspacer" 
+                     hr="true" />
+
+            <field name="left_banner_show" 
+                   type="checkbox" 
+                   label="Publicar:" 
+                   description="Mostra ou Esconde o Banner da Esquerda" 
+                   value="1" 
+                   default="0" />
+
+            <field type="modal_article"
+                   label="Selecione o artigo" 
+                   name="left_banner_article" />
+
+            <field name="left_banner_image" 
+                   type="media" 
+                   label="Imagem (440px × 285px):"
+                   directory="stories" 
+                   preview="true" />
+
+            <field type="spacer" 
+                   name="myspacer2" 
+                     hr="true" />
+
+            <field name="right_banner_show" 
+                   type="checkbox" 
+                   label="Publicar:" 
+                   description="Mostra ou Esconde o Banner da Direita" 
+                   value="1" 
+                   default="1" />
+
+            <field type="modal_article"
+                   label="Selecione o artigo"
+                   name="right_banner_article" />
+
+            <field name="right_banner_image" 
+                   type="media" 
+                   label="Imagem (440px × 285px):" 
+                   directory="stories" 
+                   preview="true"
+                   width="500" />
+
+
+        </fieldset>
+    </fields>
+</config>
+</extension>

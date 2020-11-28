@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Exibição da Logo</name>
+    <author>Inhalt Soluções Em Informática</author>
+    <version>1.0.0</version>
+    <description>Módulo para exibição da logo.</description>
+    <files>
+        <filename>mod_logo.xml</filename>
+        <filename module="mod_logo">mod_logo.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>tmpl/default.php</filename>
+    </files>
+    <config>
+    <fields name="params">
+        <fieldset name="basic">
+            <field name="html_title" type="editor" label="Título" description="" width="80" filter="safehtml" />
+            <field name="url_image" type="media" label="Endereço da imagem" directory="stories" width="500" />
+            <field name="url_image_mobile" type="media" label="Endereço da imagem mobile" directory="stories" width="500" />
+        </fieldset>
+    </fields>
+</config>
+</extension>
