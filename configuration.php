@@ -14,11 +14,11 @@ class JConfig {
 	public $dbtype = 'postgresql';
 	public $host = '192.168.1.9';
 	public $user = 'postgres';
-	public $password = '!nhaltdados10000';
+	public $password = '';
 	public $db = 'apac_cmsj3';
 	public $dbprefix = 'j27a9_';
 	public $live_site = '';
-	public $secret = 'IIhrW90wrJdLy6Iy';
+	public $secret = '';
 	public $gzip = '0';
 	public $error_reporting = 'none';
 	public $helpurl = 'https://help.joomla.org/proxy?keyref=Help{major}{minor}:{keyref}&lang={langcode}';
